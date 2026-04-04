@@ -1,0 +1,501 @@
+id,name,city,lat,lon,radius_km,current_zone
+DS-CHE-001,Zepto – North I,Chennai,13.076457,80.24549,1.9,North
+DS-CHE-002,Zepto – South I,Chennai,12.993436,80.260807,1.7,South
+DS-CHE-003,Zepto – East I,Chennai,13.086811,80.242183,2.5,East
+DS-CHE-004,Zepto – West I,Chennai,13.087655,80.35574,2.6,West
+DS-CHE-005,Zepto – Central I,Chennai,13.160005,80.290307,1.5,Central
+DS-CHE-006,Zepto – Adyar I,Chennai,12.996049,80.287031,1.8,Adyar
+DS-CHE-007,Zepto – Velachery I,Chennai,13.070197,80.286697,1.7,Velachery
+DS-CHE-008,Zepto – Anna Nagar I,Chennai,13.016865,80.331585,3.0,Anna Nagar
+DS-CHE-009,Zepto – T. Nagar I,Chennai,13.054122,80.219733,2.6,T. Nagar
+DS-CHE-010,Zepto – Sholinganallur I,Chennai,13.010419,80.32463,2.7,Sholinganallur
+DS-CHE-011,Zepto – Porur I,Chennai,13.072406,80.261271,2.1,Porur
+DS-CHE-012,Zepto – Tambaram I,Chennai,13.099088,80.286156,2.1,Tambaram
+DS-CHE-013,Zepto – Perambur I,Chennai,13.044598,80.236959,1.9,Perambur
+DS-CHE-014,Zepto – Kodambakkam I,Chennai,13.204088,80.261543,2.7,Kodambakkam
+DS-CHE-015,Zepto – Nungambakkam I,Chennai,13.167278,80.282789,2.3,Nungambakkam
+DS-CHE-016,Zepto – North II,Chennai,13.077109,80.345157,2.9,North
+DS-CHE-017,Zepto – South II,Chennai,12.997572,80.289226,1.6,South
+DS-CHE-018,Zepto – East II,Chennai,13.11796,80.258158,3.4,East
+DS-CHE-019,Zepto – West II,Chennai,13.051621,80.332695,2.3,West
+DS-CHE-020,Zepto – Central II,Chennai,13.050806,80.303448,2.0,Central
+DS-CHE-021,Zepto – Adyar II,Chennai,13.068467,80.198359,3.3,Adyar
+DS-CHE-022,Zepto – Velachery II,Chennai,13.101852,80.166065,2.5,Velachery
+DS-CHE-023,Zepto – Anna Nagar II,Chennai,13.088587,80.286437,2.8,Anna Nagar
+DS-CHE-024,Zepto – T. Nagar II,Chennai,13.026937,80.274082,2.3,T. Nagar
+DS-CHE-025,Zepto – Sholinganallur II,Chennai,13.080967,80.397047,3.2,Sholinganallur
+DS-CHE-026,Zepto – Porur II,Chennai,13.089554,80.360679,2.6,Porur
+DS-CHE-027,Zepto – Tambaram II,Chennai,13.167345,80.268701,2.4,Tambaram
+DS-CHE-028,Zepto – Perambur II,Chennai,13.118314,80.161024,2.0,Perambur
+DS-CHE-029,Zepto – Kodambakkam II,Chennai,13.082599,80.151622,3.2,Kodambakkam
+DS-CHE-030,Zepto – Nungambakkam II,Chennai,13.163667,80.246387,1.8,Nungambakkam
+DS-CHE-031,Zepto – North III,Chennai,13.010501,80.278736,2.6,North
+DS-CHE-032,Zepto – South III,Chennai,13.082864,80.278135,3.4,South
+DS-CHE-033,Zepto – East III,Chennai,13.007478,80.302126,1.6,East
+DS-CHE-034,Zepto – West III,Chennai,12.99713,80.282014,2.5,West
+DS-CHE-035,Zepto – Central III,Chennai,13.124861,80.362054,1.8,Central
+DS-CHE-036,Zepto – Adyar III,Chennai,13.094104,80.233027,3.2,Adyar
+DS-CHE-037,Zepto – Velachery III,Chennai,13.097316,80.206569,3.0,Velachery
+DS-CHE-038,Zepto – Anna Nagar III,Chennai,13.12461,80.309794,2.8,Anna Nagar
+DS-CHE-039,Zepto – T. Nagar III,Chennai,13.109129,80.252078,1.9,T. Nagar
+DS-CHE-040,Zepto – Sholinganallur III,Chennai,13.149514,80.252952,1.9,Sholinganallur
+DS-CHE-041,Zepto – Porur III,Chennai,13.118891,80.301028,3.3,Porur
+DS-CHE-042,Zepto – Tambaram III,Chennai,13.072003,80.292789,2.8,Tambaram
+DS-CHE-043,Zepto – Perambur III,Chennai,13.103697,80.297871,2.6,Perambur
+DS-CHE-044,Zepto – Kodambakkam III,Chennai,13.100313,80.166321,1.9,Kodambakkam
+DS-CHE-045,Zepto – Nungambakkam III,Chennai,13.116385,80.318228,2.4,Nungambakkam
+DS-CHE-046,Zepto – North IV,Chennai,12.994299,80.253918,1.7,North
+DS-CHE-047,Zepto – South IV,Chennai,13.109933,80.178438,2.0,South
+DS-CHE-048,Zepto – East IV,Chennai,13.139517,80.291883,2.1,East
+DS-CHE-049,Zepto – West IV,Chennai,13.203108,80.270773,3.2,West
+DS-CHE-050,Zepto – Central IV,Chennai,13.079179,80.14723,3.2,Central
+DS-CHE-051,Zepto – Adyar IV,Chennai,13.059317,80.379686,1.8,Adyar
+DS-CHE-052,Zepto – Velachery IV,Chennai,13.085558,80.215794,1.6,Velachery
+DS-CHE-053,Zepto – Anna Nagar IV,Chennai,13.171035,80.243059,3.1,Anna Nagar
+DS-CHE-054,Zepto – T. Nagar IV,Chennai,13.098844,80.150983,3.5,T. Nagar
+DS-CHE-055,Zepto – Sholinganallur IV,Chennai,13.050157,80.24783,2.1,Sholinganallur
+DS-CHE-056,Zepto – Porur IV,Chennai,13.067581,80.342072,3.0,Porur
+DS-CHE-057,Zepto – Tambaram IV,Chennai,13.110125,80.334226,3.2,Tambaram
+DS-CHE-058,Zepto – Perambur IV,Chennai,13.187228,80.278948,1.9,Perambur
+DS-CHE-059,Zepto – Kodambakkam IV,Chennai,13.032433,80.242252,1.7,Kodambakkam
+DS-CHE-060,Zepto – Nungambakkam IV,Chennai,13.059945,80.331904,2.7,Nungambakkam
+DS-CHE-061,Zepto – North V,Chennai,13.120589,80.209219,3.4,North
+DS-CHE-062,Zepto – South V,Chennai,13.173347,80.280574,2.3,South
+DS-CHE-063,Zepto – East V,Chennai,13.045242,80.249667,3.0,East
+DS-CHE-064,Zepto – West V,Chennai,13.110117,80.387255,3.5,West
+DS-CHE-065,Zepto – Central V,Chennai,13.096757,80.304879,3.4,Central
+DS-CHE-066,Zepto – Adyar V,Chennai,13.004496,80.308206,1.8,Adyar
+DS-CHE-067,Zepto – Velachery V,Chennai,13.00233,80.311612,3.5,Velachery
+DS-CHE-068,Zepto – Anna Nagar V,Chennai,13.077778,80.209911,2.1,Anna Nagar
+DS-CHE-069,Zepto – T. Nagar V,Chennai,12.97801,80.259421,1.7,T. Nagar
+DS-CHE-070,Zepto – Sholinganallur V,Chennai,13.128895,80.301242,2.7,Sholinganallur
+DS-CHE-071,Zepto – Porur V,Chennai,13.052879,80.253667,2.0,Porur
+DS-CHE-072,Zepto – Tambaram V,Chennai,13.091207,80.160224,1.7,Tambaram
+DS-CHE-073,Zepto – Perambur V,Chennai,13.100986,80.265872,3.0,Perambur
+DS-CHE-074,Zepto – Kodambakkam V,Chennai,13.054059,80.207099,2.6,Kodambakkam
+DS-CHE-075,Zepto – Nungambakkam V,Chennai,13.085425,80.257756,3.3,Nungambakkam
+DS-CHE-076,Zepto – North VI,Chennai,13.04115,80.360704,2.7,North
+DS-CHE-077,Zepto – South VI,Chennai,13.099485,80.296708,3.3,South
+DS-CHE-078,Zepto – East VI,Chennai,12.974807,80.304238,1.9,East
+DS-CHE-079,Zepto – West VI,Chennai,13.100549,80.271003,3.3,West
+DS-CHE-080,Zepto – Central VI,Chennai,13.128526,80.250469,3.4,Central
+DS-CHE-081,Zepto – Adyar VI,Chennai,12.987209,80.34083,3.3,Adyar
+DS-CHE-082,Zepto – Velachery VI,Chennai,13.097756,80.31666,3.4,Velachery
+DS-CHE-083,Zepto – Anna Nagar VI,Chennai,12.975724,80.304979,2.0,Anna Nagar
+DS-CHE-084,Zepto – T. Nagar VI,Chennai,13.064696,80.29723,3.2,T. Nagar
+DS-CHE-085,Zepto – Sholinganallur VI,Chennai,13.188171,80.281478,2.1,Sholinganallur
+DS-CHE-086,Zepto – Porur VI,Chennai,13.050599,80.272937,1.9,Porur
+DS-CHE-087,Zepto – Tambaram VI,Chennai,13.18235,80.211274,2.1,Tambaram
+DS-CHE-088,Zepto – Perambur VI,Chennai,13.040028,80.190256,2.6,Perambur
+DS-CHE-089,Zepto – Kodambakkam VI,Chennai,13.075465,80.387907,1.9,Kodambakkam
+DS-CHE-090,Zepto – Nungambakkam VI,Chennai,13.073794,80.288739,2.4,Nungambakkam
+DS-CHE-091,Zepto – North VII,Chennai,13.038891,80.259844,2.5,North
+DS-CHE-092,Zepto – South VII,Chennai,13.133599,80.243036,2.9,South
+DS-CHE-093,Zepto – East VII,Chennai,13.083983,80.343002,2.9,East
+DS-CHE-094,Zepto – West VII,Chennai,12.993985,80.268145,1.6,West
+DS-CHE-095,Zepto – Central VII,Chennai,13.042982,80.247998,3.2,Central
+DS-CHE-096,Zepto – Adyar VII,Chennai,13.040926,80.262453,2.3,Adyar
+DS-CHE-097,Zepto – Velachery VII,Chennai,13.106847,80.253599,2.3,Velachery
+DS-CHE-098,Zepto – Anna Nagar VII,Chennai,13.049883,80.380374,2.7,Anna Nagar
+DS-CHE-099,Zepto – T. Nagar VII,Chennai,13.152458,80.269111,2.1,T. Nagar
+DS-CHE-100,Zepto – Sholinganallur VII,Chennai,13.115746,80.192152,2.4,Sholinganallur
+DS-CHE-101,Zepto – Porur VII,Chennai,13.093973,80.210741,3.3,Porur
+DS-CHE-102,Zepto – Tambaram VII,Chennai,13.057577,80.275148,2.5,Tambaram
+DS-CHE-103,Zepto – Perambur VII,Chennai,13.047925,80.198704,3.0,Perambur
+DS-CHE-104,Zepto – Kodambakkam VII,Chennai,13.053436,80.256762,1.5,Kodambakkam
+DS-CHE-105,Zepto – Nungambakkam VII,Chennai,13.147058,80.274303,1.6,Nungambakkam
+DS-CHE-106,Zepto – North VIII,Chennai,13.12557,80.245529,2.9,North
+DS-CHE-107,Zepto – South VIII,Chennai,13.083954,80.183747,1.5,South
+DS-CHE-108,Zepto – East VIII,Chennai,12.981446,80.270811,2.4,East
+DS-CHE-109,Zepto – West VIII,Chennai,13.194163,80.302017,1.6,West
+DS-CHE-110,Zepto – Central VIII,Chennai,13.193741,80.271013,3.1,Central
+DS-CHE-111,Zepto – Adyar VIII,Chennai,12.971061,80.231379,3.4,Adyar
+DS-CHE-112,Zepto – Velachery VIII,Chennai,13.031263,80.344368,2.5,Velachery
+DS-CHE-113,Zepto – Anna Nagar VIII,Chennai,13.018432,80.327505,3.0,Anna Nagar
+DS-CHE-114,Zepto – T. Nagar VIII,Chennai,13.088626,80.235249,2.8,T. Nagar
+DS-CHE-115,Zepto – Sholinganallur VIII,Chennai,13.012884,80.278967,2.0,Sholinganallur
+DS-CHE-116,Zepto – Porur VIII,Chennai,13.101748,80.305137,2.1,Porur
+DS-CHE-117,Zepto – Tambaram VIII,Chennai,13.077134,80.237866,2.9,Tambaram
+DS-CHE-118,Zepto – Perambur VIII,Chennai,13.070157,80.25557,2.6,Perambur
+DS-CHE-119,Zepto – Kodambakkam VIII,Chennai,13.098277,80.22105,3.3,Kodambakkam
+DS-CHE-120,Zepto – Nungambakkam VIII,Chennai,13.036357,80.17389,3.0,Nungambakkam
+DS-CHE-121,Zepto – North IX,Chennai,13.086617,80.234922,3.0,North
+DS-CHE-122,Zepto – South IX,Chennai,12.983842,80.305423,3.0,South
+DS-CHE-123,Zepto – East IX,Chennai,13.059719,80.239491,1.9,East
+DS-CHE-124,Zepto – West IX,Chennai,13.086085,80.227453,2.9,West
+DS-CHE-125,Zepto – Central IX,Chennai,13.097197,80.218397,1.8,Central
+DS-CHE-126,Zepto – Adyar IX,Chennai,13.076884,80.231682,2.6,Adyar
+DS-CHE-127,Zepto – Velachery IX,Chennai,13.097163,80.292345,2.4,Velachery
+DS-CHE-128,Zepto – Anna Nagar IX,Chennai,13.098978,80.3006,2.2,Anna Nagar
+DS-CHE-129,Zepto – T. Nagar IX,Chennai,13.03044,80.27768,3.2,T. Nagar
+DS-CHE-130,Zepto – Sholinganallur IX,Chennai,13.097937,80.270594,2.6,Sholinganallur
+DS-CHE-131,Zepto – Porur IX,Chennai,13.082672,80.356968,3.1,Porur
+DS-CHE-132,Zepto – Tambaram IX,Chennai,13.001743,80.199098,1.9,Tambaram
+DS-CHE-133,Zepto – Perambur IX,Chennai,13.085771,80.291308,2.8,Perambur
+DS-CHE-134,Zepto – Kodambakkam IX,Chennai,13.070086,80.185633,3.0,Kodambakkam
+DS-CHE-135,Zepto – Nungambakkam IX,Chennai,13.15305,80.319343,1.7,Nungambakkam
+DS-CHE-136,Zepto – North X,Chennai,12.968829,80.278509,1.6,North
+DS-CHE-137,Zepto – South X,Chennai,13.165659,80.223345,2.3,South
+DS-CHE-138,Zepto – East X,Chennai,13.068549,80.250786,2.8,East
+DS-CHE-139,Zepto – West X,Chennai,13.143373,80.359945,2.7,West
+DS-CHE-140,Zepto – Central X,Chennai,13.170925,80.345191,2.2,Central
+DS-CHE-141,Zepto – Adyar X,Chennai,13.105024,80.209249,2.2,Adyar
+DS-CHE-142,Zepto – Velachery X,Chennai,12.995326,80.281354,3.4,Velachery
+DS-CHE-143,Zepto – Anna Nagar X,Chennai,13.000983,80.209183,2.4,Anna Nagar
+DS-CHE-144,Zepto – T. Nagar X,Chennai,12.957667,80.26676,3.1,T. Nagar
+DS-CHE-145,Zepto – Sholinganallur X,Chennai,13.067155,80.212955,3.0,Sholinganallur
+DS-CHE-146,Zepto – Porur X,Chennai,13.19342,80.258148,1.7,Porur
+DS-CHE-147,Zepto – Tambaram X,Chennai,13.058677,80.31713,2.7,Tambaram
+DS-CHE-148,Zepto – Perambur X,Chennai,13.088618,80.190001,1.9,Perambur
+DS-CHE-149,Zepto – Kodambakkam X,Chennai,13.184477,80.281909,3.3,Kodambakkam
+DS-CHE-150,Zepto – Nungambakkam X,Chennai,13.045012,80.268807,3.4,Nungambakkam
+DS-CHE-151,Zepto – North XI,Chennai,13.131378,80.327441,3.0,North
+DS-CHE-152,Zepto – South XI,Chennai,13.002863,80.24651,3.1,South
+DS-CHE-153,Zepto – East XI,Chennai,13.100748,80.346979,2.1,East
+DS-CHE-154,Zepto – West XI,Chennai,13.051244,80.208501,2.4,West
+DS-CHE-155,Zepto – Central XI,Chennai,13.036366,80.268329,2.0,Central
+DS-CHE-156,Zepto – Adyar XI,Chennai,13.102781,80.270444,1.7,Adyar
+DS-CHE-157,Zepto – Velachery XI,Chennai,13.060295,80.243268,1.9,Velachery
+DS-CHE-158,Zepto – Anna Nagar XI,Chennai,13.092173,80.14425,2.5,Anna Nagar
+DS-CHE-159,Zepto – T. Nagar XI,Chennai,13.09989,80.264676,2.0,T. Nagar
+DS-CHE-160,Zepto – Sholinganallur XI,Chennai,13.088814,80.301485,2.0,Sholinganallur
+DS-CHE-161,Zepto – Porur XI,Chennai,13.070773,80.361678,1.8,Porur
+DS-CHE-162,Zepto – Tambaram XI,Chennai,13.033889,80.347992,2.6,Tambaram
+DS-CHE-163,Zepto – Perambur XI,Chennai,13.094177,80.243171,1.6,Perambur
+DS-CHE-164,Zepto – Kodambakkam XI,Chennai,13.059279,80.37116,2.3,Kodambakkam
+DS-CHE-165,Zepto – Nungambakkam XI,Chennai,13.12026,80.281156,1.8,Nungambakkam
+DS-CHE-166,Zepto – North XI,Chennai,13.066168,80.151404,1.7,North
+DS-CHE-167,Zepto – South XI,Chennai,13.002243,80.280111,2.0,South
+DS-BAN-001,Zepto – Koramangala I,Bangalore,12.962933,77.534866,3.2,Koramangala
+DS-BAN-002,Zepto – HSR Layout I,Bangalore,12.968898,77.677066,2.7,HSR Layout
+DS-BAN-003,Zepto – Indiranagar I,Bangalore,12.84839,77.592673,1.9,Indiranagar
+DS-BAN-004,Zepto – Whitefield I,Bangalore,12.950767,77.58034,1.7,Whitefield
+DS-BAN-005,Zepto – Jayanagar I,Bangalore,12.972631,77.673815,2.1,Jayanagar
+DS-BAN-006,Zepto – Marathahalli I,Bangalore,13.064338,77.605385,2.4,Marathahalli
+DS-BAN-007,Zepto – Electronic City I,Bangalore,12.860316,77.554931,2.8,Electronic City
+DS-BAN-008,Zepto – Rajajinagar I,Bangalore,12.868356,77.563812,2.6,Rajajinagar
+DS-BAN-009,Zepto – Malleshwaram I,Bangalore,12.876736,77.52963,1.6,Malleshwaram
+DS-BAN-010,Zepto – Yelahanka I,Bangalore,13.009128,77.644309,2.6,Yelahanka
+DS-BAN-011,Zepto – BTM Layout I,Bangalore,12.991543,77.572719,2.9,BTM Layout
+DS-BAN-012,Zepto – Hebbal I,Bangalore,12.94779,77.657043,1.7,Hebbal
+DS-BAN-013,Zepto – Banashankari I,Bangalore,12.986224,77.638477,2.0,Banashankari
+DS-BAN-014,Zepto – Bellandur I,Bangalore,13.039586,77.686557,2.7,Bellandur
+DS-BAN-015,Zepto – Sarjapur I,Bangalore,12.932055,77.679412,2.0,Sarjapur
+DS-BAN-016,Zepto – Koramangala II,Bangalore,12.996493,77.656385,2.8,Koramangala
+DS-BAN-017,Zepto – HSR Layout II,Bangalore,12.957668,77.662148,2.8,HSR Layout
+DS-BAN-018,Zepto – Indiranagar II,Bangalore,12.972452,77.54617,2.2,Indiranagar
+DS-BAN-019,Zepto – Whitefield II,Bangalore,12.873218,77.572365,2.9,Whitefield
+DS-BAN-020,Zepto – Jayanagar II,Bangalore,13.091216,77.569225,2.6,Jayanagar
+DS-BAN-021,Zepto – Marathahalli II,Bangalore,12.98401,77.551008,3.4,Marathahalli
+DS-BAN-022,Zepto – Electronic City II,Bangalore,13.010863,77.488684,2.8,Electronic City
+DS-BAN-023,Zepto – Rajajinagar II,Bangalore,12.956618,77.567165,2.2,Rajajinagar
+DS-BAN-024,Zepto – Malleshwaram II,Bangalore,12.888492,77.598647,1.9,Malleshwaram
+DS-BAN-025,Zepto – Yelahanka II,Bangalore,12.934786,77.537671,2.9,Yelahanka
+DS-BAN-026,Zepto – BTM Layout II,Bangalore,13.059117,77.653226,2.0,BTM Layout
+DS-BAN-027,Zepto – Hebbal II,Bangalore,13.033551,77.634903,1.7,Hebbal
+DS-BAN-028,Zepto – Banashankari II,Bangalore,12.965807,77.657207,1.7,Banashankari
+DS-BAN-029,Zepto – Bellandur II,Bangalore,12.913069,77.641274,2.5,Bellandur
+DS-BAN-030,Zepto – Sarjapur II,Bangalore,13.079758,77.575897,2.0,Sarjapur
+DS-BAN-031,Zepto – Koramangala III,Bangalore,12.954838,77.48055,2.5,Koramangala
+DS-BAN-032,Zepto – HSR Layout III,Bangalore,12.893896,77.623302,3.1,HSR Layout
+DS-BAN-033,Zepto – Indiranagar III,Bangalore,13.03363,77.53568,3.1,Indiranagar
+DS-BAN-034,Zepto – Whitefield III,Bangalore,13.013022,77.578545,3.5,Whitefield
+DS-BAN-035,Zepto – Jayanagar III,Bangalore,12.973133,77.522431,2.2,Jayanagar
+DS-BAN-036,Zepto – Marathahalli III,Bangalore,12.94823,77.535947,2.1,Marathahalli
+DS-BAN-037,Zepto – Electronic City III,Bangalore,13.057023,77.623353,2.0,Electronic City
+DS-BAN-038,Zepto – Rajajinagar III,Bangalore,12.961278,77.610276,2.9,Rajajinagar
+DS-BAN-039,Zepto – Malleshwaram III,Bangalore,12.922256,77.627703,3.1,Malleshwaram
+DS-BAN-040,Zepto – Yelahanka III,Bangalore,12.963555,77.604158,2.5,Yelahanka
+DS-BAN-041,Zepto – BTM Layout III,Bangalore,12.910561,77.498185,2.4,BTM Layout
+DS-BAN-042,Zepto – Hebbal III,Bangalore,12.961516,77.500559,2.3,Hebbal
+DS-BAN-043,Zepto – Banashankari III,Bangalore,12.951525,77.558731,3.4,Banashankari
+DS-BAN-044,Zepto – Bellandur III,Bangalore,13.049371,77.549056,3.2,Bellandur
+DS-BAN-045,Zepto – Sarjapur III,Bangalore,12.881634,77.626081,2.1,Sarjapur
+DS-BAN-046,Zepto – Koramangala IV,Bangalore,12.873599,77.572327,1.6,Koramangala
+DS-BAN-047,Zepto – HSR Layout IV,Bangalore,13.006566,77.703786,3.5,HSR Layout
+DS-BAN-048,Zepto – Indiranagar IV,Bangalore,12.912366,77.594248,2.8,Indiranagar
+DS-BAN-049,Zepto – Whitefield IV,Bangalore,12.928203,77.658483,3.3,Whitefield
+DS-BAN-050,Zepto – Jayanagar IV,Bangalore,13.001384,77.634543,2.2,Jayanagar
+DS-BAN-051,Zepto – Marathahalli IV,Bangalore,13.02817,77.640808,3.1,Marathahalli
+DS-BAN-052,Zepto – Electronic City IV,Bangalore,12.984631,77.64946,2.7,Electronic City
+DS-BAN-053,Zepto – Rajajinagar IV,Bangalore,13.090506,77.595918,2.4,Rajajinagar
+DS-BAN-054,Zepto – Malleshwaram IV,Bangalore,13.008504,77.594446,3.1,Malleshwaram
+DS-BAN-055,Zepto – Yelahanka IV,Bangalore,12.919428,77.614731,2.4,Yelahanka
+DS-BAN-056,Zepto – BTM Layout IV,Bangalore,13.036324,77.546648,2.3,BTM Layout
+DS-BAN-057,Zepto – Hebbal IV,Bangalore,13.082263,77.594582,2.3,Hebbal
+DS-BAN-058,Zepto – Banashankari IV,Bangalore,12.975249,77.518535,2.6,Banashankari
+DS-BAN-059,Zepto – Bellandur IV,Bangalore,12.969677,77.721709,2.8,Bellandur
+DS-BAN-060,Zepto – Sarjapur IV,Bangalore,13.046447,77.5807,3.0,Sarjapur
+DS-BAN-061,Zepto – Koramangala V,Bangalore,12.996107,77.658531,3.3,Koramangala
+DS-BAN-062,Zepto – HSR Layout V,Bangalore,13.073758,77.576364,2.2,HSR Layout
+DS-BAN-063,Zepto – Indiranagar V,Bangalore,12.90908,77.535954,2.9,Indiranagar
+DS-BAN-064,Zepto – Whitefield V,Bangalore,12.879203,77.54948,3.3,Whitefield
+DS-BAN-065,Zepto – Jayanagar V,Bangalore,12.936912,77.558164,2.7,Jayanagar
+DS-BAN-066,Zepto – Marathahalli V,Bangalore,12.955433,77.589967,3.0,Marathahalli
+DS-BAN-067,Zepto – Electronic City V,Bangalore,12.990814,77.627221,3.4,Electronic City
+DS-BAN-068,Zepto – Rajajinagar V,Bangalore,12.94864,77.487829,2.0,Rajajinagar
+DS-BAN-069,Zepto – Malleshwaram V,Bangalore,12.913421,77.642453,3.0,Malleshwaram
+DS-BAN-070,Zepto – Yelahanka V,Bangalore,12.98806,77.528284,1.8,Yelahanka
+DS-BAN-071,Zepto – BTM Layout V,Bangalore,12.948091,77.688019,3.5,BTM Layout
+DS-BAN-072,Zepto – Hebbal V,Bangalore,12.950042,77.644253,3.1,Hebbal
+DS-BAN-073,Zepto – Banashankari V,Bangalore,12.977895,77.656212,2.8,Banashankari
+DS-BAN-074,Zepto – Bellandur V,Bangalore,12.902641,77.544061,3.4,Bellandur
+DS-BAN-075,Zepto – Sarjapur V,Bangalore,12.993142,77.600916,3.3,Sarjapur
+DS-BAN-076,Zepto – Koramangala VI,Bangalore,12.926663,77.564331,1.6,Koramangala
+DS-BAN-077,Zepto – HSR Layout VI,Bangalore,12.865476,77.613744,2.3,HSR Layout
+DS-BAN-078,Zepto – Indiranagar VI,Bangalore,13.066481,77.622085,2.5,Indiranagar
+DS-BAN-079,Zepto – Whitefield VI,Bangalore,13.038064,77.612589,2.4,Whitefield
+DS-BAN-080,Zepto – Jayanagar VI,Bangalore,12.885672,77.535556,2.3,Jayanagar
+DS-BAN-081,Zepto – Marathahalli VI,Bangalore,12.947313,77.591839,1.7,Marathahalli
+DS-BAN-082,Zepto – Electronic City VI,Bangalore,12.975347,77.470937,1.6,Electronic City
+DS-BAN-083,Zepto – Rajajinagar VI,Bangalore,13.015508,77.50954,3.2,Rajajinagar
+DS-BAN-084,Zepto – Malleshwaram VI,Bangalore,13.02462,77.653879,3.5,Malleshwaram
+DS-BAN-085,Zepto – Yelahanka VI,Bangalore,13.014088,77.576474,1.7,Yelahanka
+DS-BAN-086,Zepto – BTM Layout VI,Bangalore,12.921125,77.645352,2.8,BTM Layout
+DS-BAN-087,Zepto – Hebbal VI,Bangalore,12.967204,77.509913,2.0,Hebbal
+DS-BAN-088,Zepto – Banashankari VI,Bangalore,13.025347,77.604144,3.0,Banashankari
+DS-BAN-089,Zepto – Bellandur VI,Bangalore,13.002442,77.624842,2.2,Bellandur
+DS-BAN-090,Zepto – Sarjapur VI,Bangalore,13.06564,77.597813,3.2,Sarjapur
+DS-BAN-091,Zepto – Koramangala VII,Bangalore,12.988364,77.616924,1.8,Koramangala
+DS-BAN-092,Zepto – HSR Layout VII,Bangalore,12.964628,77.590964,3.1,HSR Layout
+DS-BAN-093,Zepto – Indiranagar VII,Bangalore,13.016941,77.596629,1.6,Indiranagar
+DS-BAN-094,Zepto – Whitefield VII,Bangalore,12.900935,77.589492,2.5,Whitefield
+DS-BAN-095,Zepto – Jayanagar VII,Bangalore,12.903514,77.597863,2.5,Jayanagar
+DS-BAN-096,Zepto – Marathahalli VII,Bangalore,12.968096,77.691511,3.2,Marathahalli
+DS-BAN-097,Zepto – Electronic City VII,Bangalore,12.963234,77.470235,1.6,Electronic City
+DS-BAN-098,Zepto – Rajajinagar VII,Bangalore,12.978869,77.504628,2.5,Rajajinagar
+DS-BAN-099,Zepto – Malleshwaram VII,Bangalore,12.963976,77.607333,2.7,Malleshwaram
+DS-BAN-100,Zepto – Yelahanka VII,Bangalore,12.987393,77.671671,2.6,Yelahanka
+DS-BAN-101,Zepto – BTM Layout VII,Bangalore,13.086764,77.562148,2.4,BTM Layout
+DS-BAN-102,Zepto – Hebbal VII,Bangalore,12.9609,77.521488,3.2,Hebbal
+DS-BAN-103,Zepto – Banashankari VII,Bangalore,12.889451,77.539143,1.9,Banashankari
+DS-BAN-104,Zepto – Bellandur VII,Bangalore,12.981659,77.549411,2.4,Bellandur
+DS-BAN-105,Zepto – Sarjapur VII,Bangalore,12.980105,77.544196,2.8,Sarjapur
+DS-BAN-106,Zepto – Koramangala VIII,Bangalore,12.988702,77.509858,1.6,Koramangala
+DS-BAN-107,Zepto – HSR Layout VIII,Bangalore,12.957096,77.60299,3.0,HSR Layout
+DS-BAN-108,Zepto – Indiranagar VIII,Bangalore,12.902598,77.624235,2.6,Indiranagar
+DS-BAN-109,Zepto – Whitefield VIII,Bangalore,12.989392,77.570994,2.8,Whitefield
+DS-BAN-110,Zepto – Jayanagar VIII,Bangalore,12.858089,77.59477,3.4,Jayanagar
+DS-BAN-111,Zepto – Marathahalli VIII,Bangalore,12.942723,77.532229,1.9,Marathahalli
+DS-BAN-112,Zepto – Electronic City VIII,Bangalore,12.94408,77.584354,3.2,Electronic City
+DS-BAN-113,Zepto – Rajajinagar VIII,Bangalore,13.045778,77.542916,3.1,Rajajinagar
+DS-BAN-114,Zepto – Malleshwaram VIII,Bangalore,12.866781,77.655,2.7,Malleshwaram
+DS-BAN-115,Zepto – Yelahanka VIII,Bangalore,12.96513,77.518979,3.2,Yelahanka
+DS-BAN-116,Zepto – BTM Layout VIII,Bangalore,12.998987,77.584443,2.1,BTM Layout
+DS-BAN-117,Zepto – Hebbal VIII,Bangalore,12.976469,77.533765,2.6,Hebbal
+DS-BAN-118,Zepto – Banashankari VIII,Bangalore,12.984872,77.526281,1.6,Banashankari
+DS-BAN-119,Zepto – Bellandur VIII,Bangalore,12.939718,77.593196,2.2,Bellandur
+DS-BAN-120,Zepto – Sarjapur VIII,Bangalore,13.040976,77.52468,2.6,Sarjapur
+DS-BAN-121,Zepto – Koramangala IX,Bangalore,12.97749,77.615843,2.7,Koramangala
+DS-BAN-122,Zepto – HSR Layout IX,Bangalore,12.936955,77.55426,2.5,HSR Layout
+DS-BAN-123,Zepto – Indiranagar IX,Bangalore,12.985542,77.501748,1.7,Indiranagar
+DS-BAN-124,Zepto – Whitefield IX,Bangalore,12.988824,77.513358,2.5,Whitefield
+DS-BAN-125,Zepto – Jayanagar IX,Bangalore,12.962338,77.567534,2.7,Jayanagar
+DS-BAN-126,Zepto – Marathahalli IX,Bangalore,12.97366,77.625968,1.8,Marathahalli
+DS-BAN-127,Zepto – Electronic City IX,Bangalore,13.017588,77.594393,3.0,Electronic City
+DS-BAN-128,Zepto – Rajajinagar IX,Bangalore,13.018505,77.63644,2.5,Rajajinagar
+DS-BAN-129,Zepto – Malleshwaram IX,Bangalore,12.880003,77.601606,3.2,Malleshwaram
+DS-BAN-130,Zepto – Yelahanka IX,Bangalore,12.973529,77.710526,3.2,Yelahanka
+DS-BAN-131,Zepto – BTM Layout IX,Bangalore,12.936465,77.511328,2.3,BTM Layout
+DS-BAN-132,Zepto – Hebbal IX,Bangalore,12.976637,77.628769,3.1,Hebbal
+DS-BAN-133,Zepto – Banashankari IX,Bangalore,12.897923,77.506183,1.7,Banashankari
+DS-BAN-134,Zepto – Bellandur IX,Bangalore,12.942245,77.638574,2.5,Bellandur
+DS-BAN-135,Zepto – Sarjapur IX,Bangalore,12.998269,77.556976,2.2,Sarjapur
+DS-BAN-136,Zepto – Koramangala X,Bangalore,13.031506,77.604073,2.5,Koramangala
+DS-BAN-137,Zepto – HSR Layout X,Bangalore,12.944476,77.674247,3.1,HSR Layout
+DS-BAN-138,Zepto – Indiranagar X,Bangalore,12.93991,77.603861,1.9,Indiranagar
+DS-BAN-139,Zepto – Whitefield X,Bangalore,12.911593,77.525043,1.9,Whitefield
+DS-BAN-140,Zepto – Jayanagar X,Bangalore,12.905522,77.608807,3.0,Jayanagar
+DS-BAN-141,Zepto – Marathahalli X,Bangalore,13.00963,77.522899,2.8,Marathahalli
+DS-BAN-142,Zepto – Electronic City X,Bangalore,12.891916,77.535449,1.8,Electronic City
+DS-BAN-143,Zepto – Rajajinagar X,Bangalore,12.996676,77.633568,2.0,Rajajinagar
+DS-BAN-144,Zepto – Malleshwaram X,Bangalore,12.995249,77.635701,2.4,Malleshwaram
+DS-BAN-145,Zepto – Yelahanka X,Bangalore,13.009724,77.608269,3.2,Yelahanka
+DS-BAN-146,Zepto – BTM Layout X,Bangalore,12.906998,77.636612,2.4,BTM Layout
+DS-BAN-147,Zepto – Hebbal X,Bangalore,12.9368,77.484362,2.4,Hebbal
+DS-BAN-148,Zepto – Banashankari X,Bangalore,12.891156,77.611187,2.5,Banashankari
+DS-BAN-149,Zepto – Bellandur X,Bangalore,12.981943,77.605065,3.3,Bellandur
+DS-BAN-150,Zepto – Sarjapur X,Bangalore,13.050101,77.556894,1.8,Sarjapur
+DS-BAN-151,Zepto – Koramangala XI,Bangalore,13.031314,77.59545,2.5,Koramangala
+DS-BAN-152,Zepto – HSR Layout XI,Bangalore,13.014954,77.616495,2.3,HSR Layout
+DS-BAN-153,Zepto – Indiranagar XI,Bangalore,13.039358,77.539961,2.8,Indiranagar
+DS-BAN-154,Zepto – Whitefield XI,Bangalore,12.978366,77.676806,2.1,Whitefield
+DS-BAN-155,Zepto – Jayanagar XI,Bangalore,12.885713,77.575166,3.2,Jayanagar
+DS-BAN-156,Zepto – Marathahalli XI,Bangalore,13.039007,77.583257,2.2,Marathahalli
+DS-BAN-157,Zepto – Electronic City XI,Bangalore,12.952992,77.647486,2.7,Electronic City
+DS-BAN-158,Zepto – Rajajinagar XI,Bangalore,12.955005,77.642783,3.1,Rajajinagar
+DS-BAN-159,Zepto – Malleshwaram XI,Bangalore,12.889739,77.636598,3.0,Malleshwaram
+DS-BAN-160,Zepto – Yelahanka XI,Bangalore,12.906551,77.560748,2.3,Yelahanka
+DS-BAN-161,Zepto – BTM Layout XI,Bangalore,13.010005,77.576807,1.9,BTM Layout
+DS-BAN-162,Zepto – Hebbal XI,Bangalore,12.950357,77.626133,1.8,Hebbal
+DS-BAN-163,Zepto – Banashankari XI,Bangalore,13.023126,77.610209,3.0,Banashankari
+DS-BAN-164,Zepto – Bellandur XI,Bangalore,12.872263,77.599553,2.2,Bellandur
+DS-BAN-165,Zepto – Sarjapur XI,Bangalore,12.950331,77.599928,1.8,Sarjapur
+DS-BAN-166,Zepto – Koramangala XI,Bangalore,12.88317,77.646513,1.8,Koramangala
+DS-BAN-167,Zepto – HSR Layout XI,Bangalore,12.99311,77.511834,2.0,HSR Layout
+DS-PUN-001,Zepto – Baner I,Pune,18.53435,73.764129,2.4,Baner
+DS-PUN-002,Zepto – Kothrud I,Pune,18.511136,73.753035,2.4,Kothrud
+DS-PUN-003,Zepto – Hadapsar I,Pune,18.476538,73.919587,3.5,Hadapsar
+DS-PUN-004,Zepto – Viman Nagar I,Pune,18.529991,73.805487,2.6,Viman Nagar
+DS-PUN-005,Zepto – Pimpri I,Pune,18.497868,73.959504,1.8,Pimpri
+DS-PUN-006,Zepto – Kharadi I,Pune,18.605547,73.856698,2.6,Kharadi
+DS-PUN-007,Zepto – Hinjewadi I,Pune,18.586938,73.945744,2.1,Hinjewadi
+DS-PUN-008,Zepto – Wakad I,Pune,18.481434,73.866427,1.8,Wakad
+DS-PUN-009,Zepto – Aundh I,Pune,18.567605,73.826441,2.4,Aundh
+DS-PUN-010,Zepto – Shivajinagar I,Pune,18.527155,73.849873,2.5,Shivajinagar
+DS-PUN-011,Zepto – Kondhwa I,Pune,18.6492,73.861328,1.6,Kondhwa
+DS-PUN-012,Zepto – Katraj I,Pune,18.474125,73.934926,3.1,Katraj
+DS-PUN-013,Zepto – Magarpatta I,Pune,18.551487,73.927256,2.9,Magarpatta
+DS-PUN-014,Zepto – Bibwewadi I,Pune,18.591753,73.895987,1.5,Bibwewadi
+DS-PUN-015,Zepto – Sinhagad Road I,Pune,18.538062,73.952797,2.6,Sinhagad Road
+DS-PUN-016,Zepto – Baner II,Pune,18.450153,73.854006,2.1,Baner
+DS-PUN-017,Zepto – Kothrud II,Pune,18.530807,73.838543,3.1,Kothrud
+DS-PUN-018,Zepto – Hadapsar II,Pune,18.52542,73.74282,2.7,Hadapsar
+DS-PUN-019,Zepto – Viman Nagar II,Pune,18.527556,73.891755,1.8,Viman Nagar
+DS-PUN-020,Zepto – Pimpri II,Pune,18.555604,73.825039,2.3,Pimpri
+DS-PUN-021,Zepto – Kharadi II,Pune,18.506917,73.791707,1.6,Kharadi
+DS-PUN-022,Zepto – Hinjewadi II,Pune,18.509248,73.729878,2.6,Hinjewadi
+DS-PUN-023,Zepto – Wakad II,Pune,18.560906,73.79147,3.5,Wakad
+DS-PUN-024,Zepto – Aundh II,Pune,18.527428,73.854325,2.2,Aundh
+DS-PUN-025,Zepto – Shivajinagar II,Pune,18.437347,73.845848,3.0,Shivajinagar
+DS-PUN-026,Zepto – Kondhwa II,Pune,18.529556,73.820399,3.1,Kondhwa
+DS-PUN-027,Zepto – Katraj II,Pune,18.611659,73.885305,2.9,Katraj
+DS-PUN-028,Zepto – Magarpatta II,Pune,18.442021,73.847981,3.1,Magarpatta
+DS-PUN-029,Zepto – Bibwewadi II,Pune,18.531353,73.846592,1.9,Bibwewadi
+DS-PUN-030,Zepto – Sinhagad Road II,Pune,18.552068,73.92373,3.5,Sinhagad Road
+DS-PUN-031,Zepto – Baner III,Pune,18.510607,73.761141,1.9,Baner
+DS-PUN-032,Zepto – Kothrud III,Pune,18.600688,73.786199,2.2,Kothrud
+DS-PUN-033,Zepto – Hadapsar III,Pune,18.556345,73.939126,3.0,Hadapsar
+DS-PUN-034,Zepto – Viman Nagar III,Pune,18.487617,73.956648,2.5,Viman Nagar
+DS-PUN-035,Zepto – Pimpri III,Pune,18.522276,73.786799,3.1,Pimpri
+DS-PUN-036,Zepto – Kharadi III,Pune,18.505688,73.845176,3.1,Kharadi
+DS-PUN-037,Zepto – Hinjewadi III,Pune,18.507674,73.8423,2.8,Hinjewadi
+DS-PUN-038,Zepto – Wakad III,Pune,18.59572,73.836449,2.9,Wakad
+DS-PUN-039,Zepto – Aundh III,Pune,18.528669,73.788945,2.2,Aundh
+DS-PUN-040,Zepto – Shivajinagar III,Pune,18.519943,73.984195,3.4,Shivajinagar
+DS-PUN-041,Zepto – Kondhwa III,Pune,18.558868,73.901613,3.1,Kondhwa
+DS-PUN-042,Zepto – Katraj III,Pune,18.408309,73.846896,2.7,Katraj
+DS-PUN-043,Zepto – Magarpatta III,Pune,18.51123,73.85932,3.1,Magarpatta
+DS-PUN-044,Zepto – Bibwewadi III,Pune,18.559755,73.806029,2.7,Bibwewadi
+DS-PUN-045,Zepto – Sinhagad Road III,Pune,18.408873,73.834497,3.0,Sinhagad Road
+DS-PUN-046,Zepto – Baner IV,Pune,18.488514,73.807746,2.8,Baner
+DS-PUN-047,Zepto – Kothrud IV,Pune,18.539581,73.856937,2.5,Kothrud
+DS-PUN-048,Zepto – Hadapsar IV,Pune,18.569428,73.828095,2.0,Hadapsar
+DS-PUN-049,Zepto – Viman Nagar IV,Pune,18.563306,73.8183,3.3,Viman Nagar
+DS-PUN-050,Zepto – Pimpri IV,Pune,18.521523,73.745267,2.4,Pimpri
+DS-PUN-051,Zepto – Kharadi IV,Pune,18.484351,73.869545,2.9,Kharadi
+DS-PUN-052,Zepto – Hinjewadi IV,Pune,18.483307,73.884052,1.6,Hinjewadi
+DS-PUN-053,Zepto – Wakad IV,Pune,18.489913,73.749168,2.9,Wakad
+DS-PUN-054,Zepto – Aundh IV,Pune,18.483048,73.950235,2.5,Aundh
+DS-PUN-055,Zepto – Shivajinagar IV,Pune,18.541208,73.872868,3.1,Shivajinagar
+DS-PUN-056,Zepto – Kondhwa IV,Pune,18.532607,73.907118,3.1,Kondhwa
+DS-PUN-057,Zepto – Katraj IV,Pune,18.494416,73.841746,2.1,Katraj
+DS-PUN-058,Zepto – Magarpatta IV,Pune,18.520159,73.927412,3.0,Magarpatta
+DS-PUN-059,Zepto – Bibwewadi IV,Pune,18.507664,73.912972,2.8,Bibwewadi
+DS-PUN-060,Zepto – Sinhagad Road IV,Pune,18.548229,73.81099,3.3,Sinhagad Road
+DS-PUN-061,Zepto – Baner V,Pune,18.436957,73.861944,3.4,Baner
+DS-PUN-062,Zepto – Kothrud V,Pune,18.569223,73.845826,1.7,Kothrud
+DS-PUN-063,Zepto – Hadapsar V,Pune,18.541378,73.882646,2.9,Hadapsar
+DS-PUN-064,Zepto – Viman Nagar V,Pune,18.621366,73.790392,3.2,Viman Nagar
+DS-PUN-065,Zepto – Pimpri V,Pune,18.604782,73.856419,1.8,Pimpri
+DS-PUN-066,Zepto – Kharadi V,Pune,18.588172,73.834601,1.8,Kharadi
+DS-PUN-067,Zepto – Hinjewadi V,Pune,18.511692,73.938229,2.9,Hinjewadi
+DS-PUN-068,Zepto – Wakad V,Pune,18.45271,73.797121,3.2,Wakad
+DS-PUN-069,Zepto – Aundh V,Pune,18.522294,73.940532,2.7,Aundh
+DS-PUN-070,Zepto – Shivajinagar V,Pune,18.438376,73.823482,2.8,Shivajinagar
+DS-PUN-071,Zepto – Kondhwa V,Pune,18.521428,73.815494,3.4,Kondhwa
+DS-PUN-072,Zepto – Katraj V,Pune,18.531693,73.766596,2.1,Katraj
+DS-PUN-073,Zepto – Magarpatta V,Pune,18.525928,73.910459,2.5,Magarpatta
+DS-PUN-074,Zepto – Bibwewadi V,Pune,18.597883,73.869255,2.9,Bibwewadi
+DS-PUN-075,Zepto – Sinhagad Road V,Pune,18.408357,73.84412,1.8,Sinhagad Road
+DS-PUN-076,Zepto – Baner VI,Pune,18.575048,73.82586,2.4,Baner
+DS-PUN-077,Zepto – Kothrud VI,Pune,18.556173,73.854826,2.1,Kothrud
+DS-PUN-078,Zepto – Hadapsar VI,Pune,18.574904,73.829798,3.2,Hadapsar
+DS-PUN-079,Zepto – Viman Nagar VI,Pune,18.559133,73.898195,2.1,Viman Nagar
+DS-PUN-080,Zepto – Pimpri VI,Pune,18.453345,73.86241,2.5,Pimpri
+DS-PUN-081,Zepto – Kharadi VI,Pune,18.527769,73.812416,2.5,Kharadi
+DS-PUN-082,Zepto – Hinjewadi VI,Pune,18.513773,73.90474,1.6,Hinjewadi
+DS-PUN-083,Zepto – Wakad VI,Pune,18.524098,73.769962,2.4,Wakad
+DS-PUN-084,Zepto – Aundh VI,Pune,18.49506,73.799391,3.3,Aundh
+DS-PUN-085,Zepto – Shivajinagar VI,Pune,18.42092,73.849553,2.3,Shivajinagar
+DS-PUN-086,Zepto – Kondhwa VI,Pune,18.507864,73.78966,1.6,Kondhwa
+DS-PUN-087,Zepto – Katraj VI,Pune,18.517712,73.816749,3.5,Katraj
+DS-PUN-088,Zepto – Magarpatta VI,Pune,18.502417,73.802963,2.3,Magarpatta
+DS-PUN-089,Zepto – Bibwewadi VI,Pune,18.474887,73.890764,3.0,Bibwewadi
+DS-PUN-090,Zepto – Sinhagad Road VI,Pune,18.585554,73.877941,1.6,Sinhagad Road
+DS-PUN-091,Zepto – Baner VII,Pune,18.555769,73.898548,2.4,Baner
+DS-PUN-092,Zepto – Kothrud VII,Pune,18.477408,73.820581,2.7,Kothrud
+DS-PUN-093,Zepto – Hadapsar VII,Pune,18.630244,73.907598,2.1,Hadapsar
+DS-PUN-094,Zepto – Viman Nagar VII,Pune,18.613341,73.819752,2.9,Viman Nagar
+DS-PUN-095,Zepto – Pimpri VII,Pune,18.622177,73.84099,2.8,Pimpri
+DS-PUN-096,Zepto – Kharadi VII,Pune,18.510579,73.960461,3.0,Kharadi
+DS-PUN-097,Zepto – Hinjewadi VII,Pune,18.512692,73.832287,3.4,Hinjewadi
+DS-PUN-098,Zepto – Wakad VII,Pune,18.420552,73.872548,2.9,Wakad
+DS-PUN-099,Zepto – Aundh VII,Pune,18.507216,73.784326,2.7,Aundh
+DS-PUN-100,Zepto – Shivajinagar VII,Pune,18.500675,73.90553,1.6,Shivajinagar
+DS-PUN-101,Zepto – Kondhwa VII,Pune,18.514409,73.86368,2.1,Kondhwa
+DS-PUN-102,Zepto – Katraj VII,Pune,18.594753,73.88938,3.0,Katraj
+DS-PUN-103,Zepto – Magarpatta VII,Pune,18.465758,73.941836,1.6,Magarpatta
+DS-PUN-104,Zepto – Bibwewadi VII,Pune,18.543983,73.886208,2.8,Bibwewadi
+DS-PUN-105,Zepto – Sinhagad Road VII,Pune,18.513352,73.830393,3.3,Sinhagad Road
+DS-PUN-106,Zepto – Baner VIII,Pune,18.561623,73.801067,2.9,Baner
+DS-PUN-107,Zepto – Kothrud VIII,Pune,18.448572,73.806216,1.9,Kothrud
+DS-PUN-108,Zepto – Hadapsar VIII,Pune,18.595143,73.857424,3.4,Hadapsar
+DS-PUN-109,Zepto – Viman Nagar VIII,Pune,18.559699,73.84759,2.9,Viman Nagar
+DS-PUN-110,Zepto – Pimpri VIII,Pune,18.564752,73.806934,3.1,Pimpri
+DS-PUN-111,Zepto – Kharadi VIII,Pune,18.540415,73.843545,2.3,Kharadi
+DS-PUN-112,Zepto – Hinjewadi VIII,Pune,18.507059,73.980061,3.1,Hinjewadi
+DS-PUN-113,Zepto – Wakad VIII,Pune,18.560038,73.832997,2.2,Wakad
+DS-PUN-114,Zepto – Aundh VIII,Pune,18.533525,73.796022,1.9,Aundh
+DS-PUN-115,Zepto – Shivajinagar VIII,Pune,18.491206,73.767369,1.8,Shivajinagar
+DS-PUN-116,Zepto – Kondhwa VIII,Pune,18.468334,73.830315,2.8,Kondhwa
+DS-PUN-117,Zepto – Katraj VIII,Pune,18.503976,73.845358,2.3,Katraj
+DS-PUN-118,Zepto – Magarpatta VIII,Pune,18.5032,73.83606,1.5,Magarpatta
+DS-PUN-119,Zepto – Bibwewadi VIII,Pune,18.482711,73.803609,3.4,Bibwewadi
+DS-PUN-120,Zepto – Sinhagad Road VIII,Pune,18.475651,73.878312,3.4,Sinhagad Road
+DS-PUN-121,Zepto – Baner IX,Pune,18.597707,73.805463,1.7,Baner
+DS-PUN-122,Zepto – Kothrud IX,Pune,18.48811,73.771473,3.4,Kothrud
+DS-PUN-123,Zepto – Hadapsar IX,Pune,18.506459,73.955268,1.9,Hadapsar
+DS-PUN-124,Zepto – Viman Nagar IX,Pune,18.457682,73.904507,2.5,Viman Nagar
+DS-PUN-125,Zepto – Pimpri IX,Pune,18.471815,73.968003,3.3,Pimpri
+DS-PUN-126,Zepto – Kharadi IX,Pune,18.524823,73.875081,3.5,Kharadi
+DS-PUN-127,Zepto – Hinjewadi IX,Pune,18.646016,73.840991,2.5,Hinjewadi
+DS-PUN-128,Zepto – Wakad IX,Pune,18.478462,73.915529,1.9,Wakad
+DS-PUN-129,Zepto – Aundh IX,Pune,18.536856,73.904085,2.0,Aundh
+DS-PUN-130,Zepto – Shivajinagar IX,Pune,18.609781,73.897223,2.6,Shivajinagar
+DS-PUN-131,Zepto – Kondhwa IX,Pune,18.493491,73.861824,3.3,Kondhwa
+DS-PUN-132,Zepto – Katraj IX,Pune,18.458954,73.864068,2.8,Katraj
+DS-PUN-133,Zepto – Magarpatta IX,Pune,18.541107,73.874808,2.0,Magarpatta
+DS-PUN-134,Zepto – Bibwewadi IX,Pune,18.554761,73.849981,3.4,Bibwewadi
+DS-PUN-135,Zepto – Sinhagad Road IX,Pune,18.610726,73.854639,2.8,Sinhagad Road
+DS-PUN-136,Zepto – Baner X,Pune,18.508451,73.84974,2.1,Baner
+DS-PUN-137,Zepto – Kothrud X,Pune,18.558371,73.759851,2.9,Kothrud
+DS-PUN-138,Zepto – Hadapsar X,Pune,18.53865,73.812021,2.1,Hadapsar
+DS-PUN-139,Zepto – Viman Nagar X,Pune,18.499037,73.840392,1.8,Viman Nagar
+DS-PUN-140,Zepto – Pimpri X,Pune,18.439691,73.855889,2.6,Pimpri
+DS-PUN-141,Zepto – Kharadi X,Pune,18.533558,73.770162,1.9,Kharadi
+DS-PUN-142,Zepto – Hinjewadi X,Pune,18.61973,73.858518,1.7,Hinjewadi
+DS-PUN-143,Zepto – Wakad X,Pune,18.55093,73.842756,2.6,Wakad
+DS-PUN-144,Zepto – Aundh X,Pune,18.548194,73.919816,2.6,Aundh
+DS-PUN-145,Zepto – Shivajinagar X,Pune,18.557602,73.897923,1.7,Shivajinagar
+DS-PUN-146,Zepto – Kondhwa X,Pune,18.595255,73.861227,2.5,Kondhwa
+DS-PUN-147,Zepto – Katraj X,Pune,18.462868,73.881629,2.4,Katraj
+DS-PUN-148,Zepto – Magarpatta X,Pune,18.542685,73.955674,2.9,Magarpatta
+DS-PUN-149,Zepto – Bibwewadi X,Pune,18.58551,73.778729,2.7,Bibwewadi
+DS-PUN-150,Zepto – Sinhagad Road X,Pune,18.533894,73.869148,3.5,Sinhagad Road
+DS-PUN-151,Zepto – Baner XI,Pune,18.514955,73.968284,1.6,Baner
+DS-PUN-152,Zepto – Kothrud XI,Pune,18.57519,73.772039,3.5,Kothrud
+DS-PUN-153,Zepto – Hadapsar XI,Pune,18.474736,73.778135,2.3,Hadapsar
+DS-PUN-154,Zepto – Viman Nagar XI,Pune,18.433937,73.892176,2.9,Viman Nagar
+DS-PUN-155,Zepto – Pimpri XI,Pune,18.458827,73.811076,2.2,Pimpri
+DS-PUN-156,Zepto – Kharadi XI,Pune,18.585392,73.887591,3.0,Kharadi
+DS-PUN-157,Zepto – Hinjewadi XI,Pune,18.525754,73.858039,2.1,Hinjewadi
+DS-PUN-158,Zepto – Wakad XI,Pune,18.455622,73.823644,3.1,Wakad
+DS-PUN-159,Zepto – Aundh XI,Pune,18.568664,73.857317,3.4,Aundh
+DS-PUN-160,Zepto – Shivajinagar XI,Pune,18.501529,73.840105,2.3,Shivajinagar
+DS-PUN-161,Zepto – Kondhwa XI,Pune,18.405517,73.8574,1.9,Kondhwa
+DS-PUN-162,Zepto – Katraj XI,Pune,18.525848,73.920932,2.9,Katraj
+DS-PUN-163,Zepto – Magarpatta XI,Pune,18.549777,73.909418,2.0,Magarpatta
+DS-PUN-164,Zepto – Bibwewadi XI,Pune,18.630986,73.859162,2.5,Bibwewadi
+DS-PUN-165,Zepto – Sinhagad Road XI,Pune,18.624135,73.833149,2.1,Sinhagad Road
+DS-PUN-166,Zepto – Baner XI,Pune,18.468995,73.819883,2.1,Baner

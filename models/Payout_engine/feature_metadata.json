@@ -1,0 +1,18 @@
+{
+  "numeric_features": [
+    "distance_from_epicenter_km",
+    "historical_hourly_wage",
+    "disruption_duration_hours",
+    "severity_multiplier",
+    "coverage_pct",
+    "hour_sin",
+    "hour_cos",
+    "is_app_suspension"
+  ],
+  "categorical_features": [
+    "trigger_category",
+    "zone_category",
+    "day_of_week",
+    "city"
+  ]
+}

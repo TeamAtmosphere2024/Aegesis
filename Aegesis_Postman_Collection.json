@@ -1,0 +1,300 @@
+{
+  "info": {
+    "_postman_id": "c1a9c8b7-6f8d-4a1e-8e3b-9a9b8c7d6e5f",
+    "name": "Aegesis API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/health",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Riders",
+      "item": [
+        {
+          "name": "Create Rider (Dynamic Map)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Arjun Kumar\",\n    \"phone\": \"9876543210\",\n    \"zone_risk\": 0.55,\n    \"lat\": 12.9352,\n    \"lon\": 77.6245,\n    \"dpdt\": 80.0\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/riders/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "riders",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Wage Slot for Rider",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"day_of_week\": 4,\n    \"hour_bucket\": 20,\n    \"avg_wage_inr\": 150.0\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/riders/1/wage",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "riders",
+                "1",
+                "wage"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Rider Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/riders/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "riders",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update GPS Location (Dynamic Zone Inherit)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"lat\": 12.9352,\n    \"lon\": 77.6245\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/riders/1/gps",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "riders",
+                "1",
+                "gps"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Premium (Model 1)",
+      "item": [
+        {
+          "name": "Calculate Premium for Rider 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/premium/1?env_risk=0.5&soc_risk=0.3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "premium",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "env_risk",
+                  "value": "0.5"
+                },
+                {
+                  "key": "soc_risk",
+                  "value": "0.3"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Webhooks (Model 2 & 3)",
+      "item": [
+        {
+          "name": "Trigger IMD Flood (Cat A)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"source\": \"imd_weather_api\",\n    \"trigger_type\": \"SEVERE_FLOOD\",\n    \"category\": \"ENVIRONMENTAL\",\n    \"geo_fence\": {\n        \"center_lat\": 12.9350,\n        \"center_long\": 77.6240,\n        \"radius_km\": 2.5\n    },\n    \"severity_multiplier\": 1.0,\n    \"estimated_duration_hours\": 3.0,\n    \"zone_category\": \"RED\"\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/webhooks/imd-weather",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "webhooks",
+                "imd-weather"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Check Trigger Result",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/webhooks/events",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "webhooks",
+                "events"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Check Final Claim Ledgers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/v1/riders/1/claims",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "riders",
+                "1",
+                "claims"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

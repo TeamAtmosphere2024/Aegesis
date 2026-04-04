@@ -1,0 +1,107 @@
+# ========================
+# GENERAL
+# ========================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.cache
+
+# ========================
+# PYTHON (BACKEND)
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# ========================
+# NODE / FRONTEND
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo
+.expo/
+.expo-shared/
+
+# Build outputs
+dist/
+web-build/
+build/
+
+# ========================
+# ENV FILES (SECRETS)
+# ========================
+.env
+.env.*
+*.env
+
+# ========================
+# ML MODELS / HEAVY FILES
+# ========================
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.joblib
+
+# ========================
+# BINARIES / LARGE FILES
+# ========================
+*.apk
+*.exe
+*.dll
+*.so
+*.dylib
+*.zip
+*.tar
+*.gz
+
+# ========================
+# DATABASE
+# ========================
+*.sqlite
+*.db
+
+# ========================
+# OS / IDE
+# ========================
+.vscode/
+.idea/
+
+# ========================
+# DOCKER
+# ========================
+.dockerignore
+
+# ========================
+# VERCEL
+# ========================
+.vercel/
+
+# ========================
+# BACKUP / LOCAL DUMPS
+# ========================
+backup/
+
+# ========================
+# CACHE / TEMP
+# ========================
+.cache/
+.tmp/
+
+# ========================
+# OPTIONAL (SAFE GUARDS)
+# ========================
+*.ipynb_checkpoints

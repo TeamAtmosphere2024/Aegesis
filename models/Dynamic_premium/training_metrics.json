@@ -1,0 +1,29 @@
+{
+  "train": {
+    "mae": 4.0038,
+    "rmse": 5.815,
+    "r2": 0.969291,
+    "mape_pct": 4.0919
+  },
+  "test": {
+    "mae": 4.1137,
+    "rmse": 6.0167,
+    "r2": 0.966386,
+    "mape_pct": 4.1516
+  },
+  "cv_mae_mean": 4.2774,
+  "cv_mae_std": 0.0658,
+  "best_iteration": 102,
+  "feature_importance": {
+    "zone_penalty_inr": 0.432739,
+    "zone_category": 0.209826,
+    "zone_penalty_x_dpdt": 0.168847,
+    "subtotal_inr": 0.154659,
+    "dpdt_penalty_factor": 0.019562,
+    "dpdt_pct": 0.013093,
+    "combined_predictive_risk": 0.000433,
+    "predictive_sociopolitical_risk": 0.000294,
+    "historical_zone_risk_score": 0.000282,
+    "predictive_environmental_risk": 0.000265
+  }
+}
