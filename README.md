@@ -3,6 +3,11 @@
 > *Instant income protection for Q-Commerce delivery partners - payouts in under 3 minutes, no paperwork.*
 
 ---
+### Few note for judges
+- The backend is deployed in Render so if you login it may take some time to wake up please wait for few minutes then refresh and use the app
+- To access the admin portal use this link https://aegesis-frontend.vercel.app/admin
+
+
 
 ## Table of Contents
 
@@ -905,6 +910,12 @@ Every Monday 6 AM:
 - **Year 2:** Swiggy Instamart, Amazon Fresh, Tier-2 cities
 - **Year 3:** Auto-rickshaw and two-wheeler fleet operators; ONDC integration
 - **Long-term:** White-label parametric insurance engine for gig platforms globally
+
+---
+
+## Pitch Deck
+
+- Link = https://docs.google.com/presentation/d/18QqFrsuNNYU_fgSu_G-RdfCw4hC0v2mc/edit?usp=sharing&ouid=101411879732223483840&rtpof=true&sd=true
 
 ---
 
