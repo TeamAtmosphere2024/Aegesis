@@ -1,56 +1,56 @@
 export default {
-  // Base theme — Light Blue Professional
-  primary: '#1A3A5C',       // Deep navy for text
-  primaryLight: '#2C5384',  // Medium navy
-  accent: '#00B4D8',        // Bright cyan accent
-  vibrant: '#0077B6',       // Strong blue
+  // Base theme — Refined Teal Blue (#2099BA)
+  primary: '#1E293B',       
+  primaryLight: '#475569',  
+  accent: '#2099BA',        // The new refined teal from your image
+  vibrant: '#187A94',       // Deeper shade for interaction states
   white: '#FFFFFF',
   black: '#000000',
-  textSecondary: 'rgba(26, 58, 92, 0.6)',
-  textMuted: 'rgba(26, 58, 92, 0.4)',
+  textSecondary: 'rgba(30, 41, 59, 0.6)',
+  textMuted: 'rgba(30, 41, 59, 0.4)',
   
   // Status
-  danger: '#E63946',
-  safety: '#2EC4B6',
-  warning: '#F4A261',
+  danger: '#EF4444',
+  safety: '#10B981',
+  warning: '#F59E0B',
 
   // Zone Colors
-  zoneGreen: '#2EC4B6',     // 🟢 Green Zone — 50%
-  zoneOrange: '#F4A261',    // 🟠 Orange Zone — 45%
-  zoneRed: '#E63946',       // 🔴 Red Zone — 35%
+  zoneGreen: '#10B981',     
+  zoneOrange: '#F59E0B',    
+  zoneRed: '#EF4444',       
 
   // Q-Commerce
   zeptoYellow: '#FFE600',
   blinkitGreen: '#0C831F',
 
   // DPDT
-  dpdtLow: '#E63946',
-  dpdtMid: '#F4A261',
-  dpdtHigh: '#2EC4B6',
+  dpdtLow: '#EF4444',
+  dpdtMid: '#F59E0B',
+  dpdtHigh: '#2099BA', 
 
-  // Gradient backgrounds (light blue theme)
-  gradientTop: '#E8F4FD',     // Lightest blue
-  gradientMid: '#C1E0F7',     // Soft blue
-  gradientBottom: '#89CFF0',  // Medium sky blue
-  gradientDeep: '#0077B6',    // Deep blue
+  // Gradient backgrounds
+  gradientTop: '#F8FAFC',     
+  gradientMid: '#F1F5F9',     
+  gradientBottom: '#E2E8F0',  
+  gradientDeep: '#2099BA',    
 
-  // Premium layers (for dark accent cards)
-  layer0: '#0A1628',
-  layer1: '#132D4A',
-  layer2: '#1C3D5A',
+  // Premium layers
+  layer0: '#0F2E40', 
+  layer1: '#14415A', 
+  layer2: '#2099BA', 
 
   // Card backgrounds
-  cardBgDark: 'rgba(26, 58, 92, 0.92)',
-  cardBgLight: 'rgba(255, 255, 255, 0.75)',
-  cardBgSubtle: 'rgba(255, 255, 255, 0.5)',
+  cardBgDark: 'rgba(32, 153, 186, 0.9)',
+  cardBgLight: 'rgba(255, 255, 255, 0.95)',
+  cardBgSubtle: 'rgba(255, 255, 255, 0.7)',
 
-  // Glassmorphism (light theme adapted)
-  glassBg: 'rgba(255, 255, 255, 0.35)',
-  glassBorderLight: 'rgba(255, 255, 255, 0.7)',
-  glassBorderDark: 'rgba(26, 58, 92, 0.08)',
-  glassShadow: 'rgba(26, 58, 92, 0.15)',
+  // Glassmorphism
+  glassBg: 'rgba(255, 255, 255, 0.5)',
+  glassBorderLight: 'rgba(255, 255, 255, 0.8)',
+  glassBorderDark: 'rgba(32, 153, 186, 0.05)',
+  glassShadow: 'rgba(32, 153, 186, 0.1)',
 
   // Coverage
-  coverageTrack: 'rgba(26, 58, 92, 0.1)',
-  coverageFill: '#00B4D8',
+  coverageTrack: 'rgba(32, 153, 186, 0.05)',
+  coverageFill: '#2099BA',
 };

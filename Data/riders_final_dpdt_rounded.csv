@@ -1,0 +1,501 @@
+SR. No,Rider ID,Rider Name,Phone,Darkstore ID,Darkstore Name,City,Vehicle Type,Status,Exp (Yrs),Avg Del/Day,Rating,earnings_per_hour,deliveries_accepted_triggers,total_deliveries_trigger,DPDT_percent
+1,RDR-CHE-5001,Girish Singh,+91 7896233790,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Electric Scooter,Active,3.8,36,4.6,370,7,10,70
+2,RDR-CHE-5002,Venkat Patel,+91 9553035110,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Bicycle,Active,1.5,34,3.5,206,27,27,100
+3,RDR-CHE-5003,Ganesh Iyer,+91 9853041955,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Petrol Scooter,Active,3.2,40,4.8,171,29,41,71
+4,RDR-CHE-5004,Salman Rajan,+91 7849621470,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Petrol Scooter,Active,1.5,39,4,288,20,20,100
+5,RDR-CHE-5005,Deepak Joshi,+91 7485451171,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Electric Bike,On Leave,4.1,38,4.2,120,30,30,100
+6,RDR-CHE-5006,Anil Rao,+91 8184611066,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Petrol Scooter,Inactive,3.3,42,4,202,16,35,46
+7,RDR-CHE-5007,Ganesh Iyer,+91 7149203558,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Petrol Scooter,On Leave,4.9,42,3.8,221,30,34,88
+8,RDR-CHE-5008,Vijay Joshi,+91 8586845604,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Petrol Scooter,Active,2.2,21,4.5,314,24,31,77
+9,RDR-CHE-5009,Nandhu Rao,+91 9795822698,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Electric Scooter,On Leave,2.9,22,3.7,430,30,36,83
+10,RDR-CHE-5010,Dinesh Mishra,+91 9838908273,DS-CHE-2801,Blinkit  -  Vadapalani Zone,Chennai,Petrol Scooter,On Leave,4.3,39,3.6,187,14,22,64
+11,RDR-CHE-5011,Karthik Rajan,+91 8530747414,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Electric Scooter,Active,4.7,43,4.6,472,42,42,100
+12,RDR-CHE-5012,Rajesh Pillai,+91 8524806516,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Electric Bike,On Leave,1.1,19,3.9,199,43,43,100
+13,RDR-CHE-5013,Srikanth Sen,+91 8902099969,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Petrol Scooter,Inactive,2.3,22,5,459,32,50,64
+14,RDR-CHE-5014,Sanjay Roy,+91 8197613238,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Petrol Scooter,Inactive,1.2,20,4.7,251,27,44,61
+15,RDR-CHE-5015,Vinod Bose,+91 7513140753,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Electric Scooter,Inactive,2.9,32,4.8,230,7,10,70
+16,RDR-CHE-5016,Arjun Menon,+91 9222998994,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Petrol Scooter,Active,1.7,35,4,249,24,30,80
+17,RDR-CHE-5017,Sachin Chauhan,+91 7587182120,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Bicycle,On Leave,3.7,31,4.6,408,15,15,100
+18,RDR-CHE-5018,Mahesh Rao,+91 7771410971,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Electric Scooter,On Leave,3.2,19,4.1,357,31,37,84
+19,RDR-CHE-5019,Pradeep Sen,+91 9100614068,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Petrol Scooter,Active,1,26,4.8,443,15,26,58
+20,RDR-CHE-5020,Rahul Gupta,+91 7358633898,DS-CHE-2190,Zepto  -  Puzhal Mini,Chennai,Electric Bike,Inactive,0.9,30,4.7,393,10,14,71
+21,RDR-CHE-5021,Salman Sen,+91 7237859287,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Petrol Scooter,Inactive,1.2,31,4.8,485,21,40,52
+22,RDR-CHE-5022,Vinod Verma,+91 9910959828,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Petrol Scooter,Active,1.9,36,4.5,291,6,14,43
+23,RDR-CHE-5023,Arun Murthy,+91 9584779555,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Electric Scooter,Active,2,33,4.3,376,21,47,45
+24,RDR-CHE-5024,Ashok Gupta,+91 7176228245,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Petrol Scooter,Active,0.8,16,4.8,260,10,12,83
+25,RDR-CHE-5025,Manoj Roy,+91 7399012686,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Petrol Scooter,Active,1.1,44,4.8,413,21,32,66
+26,RDR-CHE-5026,Prakash Das,+91 7942478695,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Petrol Scooter,Active,0.9,36,4.1,121,46,46,100
+27,RDR-CHE-5027,Vinod Chauhan,+91 8882839238,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Electric Scooter,On Leave,3.4,16,4.1,352,46,46,100
+28,RDR-CHE-5028,Ajay Rajan,+91 7366992705,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Electric Scooter,Active,1.1,20,3.9,335,19,19,100
+29,RDR-CHE-5029,Amit Babu,+91 7575808013,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Electric Bike,Inactive,0.9,35,5,444,19,19,100
+30,RDR-CHE-5030,Arjun Patel,+91 7278575192,DS-CHE-2817,Blinkit  -  Nungambakkam I,Chennai,Petrol Scooter,Active,4.4,43,3.6,148,28,28,100
+31,RDR-CHE-5031,Dinesh Kumar,+91 8384759615,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Electric Bike,On Leave,1.8,37,4.9,158,26,26,100
+32,RDR-CHE-5032,Srikanth Menon,+91 9622559454,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Electric Scooter,Active,4.9,33,4.6,269,30,30,100
+33,RDR-CHE-5033,Suresh Krishnan,+91 8161380746,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Electric Scooter,Active,4.6,31,3.7,287,23,23,100
+34,RDR-CHE-5034,Mahesh Patel,+91 7173574218,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Petrol Scooter,On Leave,1.6,18,4.9,370,15,18,83
+35,RDR-CHE-5035,Prakash Gupta,+91 9738360085,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Bicycle,Active,3.5,33,4.3,289,8,10,80
+36,RDR-CHE-5036,Rohit Verma,+91 9869005091,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Electric Scooter,Active,1.1,35,3.9,274,11,22,50
+37,RDR-CHE-5037,Varun Rao,+91 7110002396,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Petrol Scooter,Inactive,5,17,4.3,150,13,13,100
+38,RDR-CHE-5038,Mahesh Mishra,+91 7474745382,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Electric Bike,Inactive,2.2,20,4.2,463,10,10,100
+39,RDR-CHE-5039,Venkat Iyer,+91 8756783995,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Electric Bike,Inactive,2.9,36,4.7,154,49,49,100
+40,RDR-CHE-5040,Rahul Rao,+91 9211225158,DS-CHE-1251,Blinkit  -  KK Nagar IV,Chennai,Electric Bike,Active,1,18,4.6,343,41,41,100
+41,RDR-CHE-5041,Ramesh Mishra,+91 8749431082,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Electric Scooter,Active,3.6,42,3.9,419,19,43,44
+42,RDR-CHE-5042,Naresh Mishra,+91 7199104722,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Petrol Scooter,Inactive,0.7,25,4.7,230,37,37,100
+43,RDR-CHE-5043,Girish Mishra,+91 7895890631,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Petrol Scooter,On Leave,3,18,3.6,406,40,40,100
+44,RDR-CHE-5044,Nandhu Murthy,+91 7685823118,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Bicycle,Active,3,28,3.7,234,17,17,100
+45,RDR-CHE-5045,Rahul Mehta,+91 7484194737,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Electric Scooter,Active,1,39,4.3,120,48,48,100
+46,RDR-CHE-5046,Lokesh Bose,+91 9265950383,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Electric Bike,Active,1.2,40,4.7,428,18,35,51
+47,RDR-CHE-5047,Lokesh Kumar,+91 7890880074,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Electric Bike,On Leave,2.4,36,4.8,266,43,43,100
+48,RDR-CHE-5048,Amit Mishra,+91 7945436943,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Petrol Scooter,Active,0.7,30,3.8,373,12,12,100
+49,RDR-CHE-5049,Sunil Mehta,+91 8981044229,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Petrol Scooter,Active,0.6,21,4.1,487,12,21,57
+50,RDR-CHE-5050,Vikram Babu,+91 7930353157,DS-CHE-3505,Blinkit  -  Siruseri I,Chennai,Electric Scooter,On Leave,2.3,41,4.3,188,10,10,100
+51,RDR-CHE-5051,Ravi Singh,+91 8291735734,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Petrol Scooter,Inactive,0.7,34,4.2,415,14,14,100
+52,RDR-CHE-5052,Farhan Rajan,+91 8568574364,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Petrol Scooter,Active,2.2,33,3.8,113,39,39,100
+53,RDR-CHE-5053,Karthik Iyer,+91 8101815992,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Petrol Scooter,Inactive,3.6,45,4.6,341,39,39,100
+54,RDR-CHE-5054,Shankar Verma,+91 8563102056,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Electric Scooter,On Leave,2,25,4.5,364,15,26,58
+55,RDR-CHE-5055,Anil Krishnan,+91 8644518647,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Electric Scooter,Active,2.3,24,4.3,445,32,32,100
+56,RDR-CHE-5056,Ganesh Chauhan,+91 9507104143,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Petrol Scooter,Inactive,3.3,24,4.1,152,24,24,100
+57,RDR-CHE-5057,Arjun Yadav,+91 8325681936,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Petrol Scooter,Active,3.4,29,4.2,485,21,46,46
+58,RDR-CHE-5058,Satish Verma,+91 9608079792,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Petrol Scooter,Inactive,3.8,36,3.6,439,27,30,90
+59,RDR-CHE-5059,Mahesh Menon,+91 9764926227,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Electric Scooter,Inactive,3.9,36,4,191,23,23,100
+60,RDR-CHE-5060,Ganesh Reddy,+91 7149621604,DS-CHE-2117,Blinkit  -  Palavakkam Plus,Chennai,Electric Scooter,Active,4.3,17,4.2,466,7,11,64
+61,RDR-CHE-5061,Girish Mukherjee,+91 7871318048,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Petrol Scooter,Active,1.6,35,4.5,363,16,20,80
+62,RDR-CHE-5062,Salman Babu,+91 7935822550,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Petrol Scooter,Active,4.8,31,4.2,134,48,48,100
+63,RDR-CHE-5063,Srikanth Gupta,+91 7590122159,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Electric Scooter,Active,2.9,32,4.4,305,31,47,66
+64,RDR-CHE-5064,Salman Murthy,+91 8757830420,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Electric Bike,Inactive,2.4,44,4.3,180,39,43,91
+65,RDR-CHE-5065,Pradeep Krishnan,+91 8583258726,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Electric Scooter,Active,3.4,39,4.7,149,47,47,100
+66,RDR-CHE-5066,Naresh Pillai,+91 7394846763,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Petrol Scooter,On Leave,1.6,25,4,459,43,43,100
+67,RDR-CHE-5067,Venkat Patel,+91 7261953189,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Electric Scooter,On Leave,3.7,17,4.1,487,27,27,100
+68,RDR-CHE-5068,Ajay Sen,+91 8546434187,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Electric Scooter,Inactive,2.3,39,4.4,101,28,39,72
+69,RDR-CHE-5069,Nandhu Kumar,+91 9508431021,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Petrol Scooter,Inactive,1.8,27,4.8,489,14,24,58
+70,RDR-CHE-5070,Lokesh Sen,+91 9888807316,DS-CHE-2411,Blinkit  -  Kovilambakkam V,Chennai,Petrol Scooter,On Leave,1.5,22,3.9,153,36,36,100
+71,RDR-CHE-5071,Naresh Kumar,+91 8460916347,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Petrol Scooter,On Leave,3.8,41,4.2,205,43,43,100
+72,RDR-CHE-5072,Sanjay Bose,+91 9128955006,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Electric Bike,Active,3.5,17,4.5,359,47,47,100
+73,RDR-CHE-5073,Sanjay Babu,+91 8295130056,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Electric Scooter,Active,1.5,25,4,409,30,42,71
+74,RDR-CHE-5074,Dinesh Mishra,+91 8370874491,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Electric Bike,Active,3.9,16,5,290,33,33,100
+75,RDR-CHE-5075,Pranav Gupta,+91 9173678414,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Petrol Scooter,On Leave,3.9,45,3.9,317,17,24,71
+76,RDR-CHE-5076,Ravi Bose,+91 7356135680,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Electric Scooter,On Leave,3,21,4.2,143,39,39,100
+77,RDR-CHE-5077,Rohit Subramanian,+91 8280162221,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Petrol Scooter,Inactive,3.7,39,4.7,261,26,26,100
+78,RDR-CHE-5078,Rahul Singh,+91 9127571992,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Electric Bike,Active,4.6,27,4.1,301,12,14,86
+79,RDR-CHE-5079,Imran Verma,+91 7735760237,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Petrol Scooter,On Leave,1,39,4,369,38,38,100
+80,RDR-CHE-5080,Satish Bose,+91 7954942461,DS-CHE-3113,Blinkit  -  Korattur Ultra,Chennai,Electric Bike,On Leave,2.1,28,4.5,450,13,13,100
+81,RDR-CHE-5081,Manoj Roy,+91 9466394187,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Bicycle,Active,2.7,28,4.9,403,19,19,100
+82,RDR-CHE-5082,Girish Murthy,+91 8859466878,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Electric Scooter,Active,2.8,35,3.9,370,11,26,42
+83,RDR-CHE-5083,Venkat Subramanian,+91 8599154414,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Petrol Scooter,On Leave,1.7,42,3.9,314,19,19,100
+84,RDR-CHE-5084,Deepak Mishra,+91 8361846370,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Petrol Scooter,Active,3.5,25,3.5,351,15,26,58
+85,RDR-CHE-5085,Varun Nair,+91 8327761953,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Electric Scooter,Active,1.8,34,4.6,289,29,29,100
+86,RDR-CHE-5086,Vikram Sen,+91 7654724287,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Electric Bike,Active,3.7,30,4.3,395,24,33,73
+87,RDR-CHE-5087,Amit Iyer,+91 8793532952,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Petrol Scooter,Active,0.6,24,3.8,312,14,14,100
+88,RDR-CHE-5088,Nandhu Gupta,+91 8812921644,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Petrol Scooter,Active,2.9,28,5,307,43,43,100
+89,RDR-CHE-5089,Srikanth Pandey,+91 8854684750,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Petrol Scooter,Active,1.5,38,3.8,336,11,15,73
+90,RDR-CHE-5090,Anil Krishnan,+91 9918394863,DS-CHE-1408,Zepto  -  Perungalathur Quick,Chennai,Petrol Scooter,Active,3.8,23,4.6,437,9,11,82
+91,RDR-CHE-5091,Salman Roy,+91 9403867539,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Bike,Inactive,1.8,26,3.8,466,22,22,100
+92,RDR-CHE-5092,Arjun Iyer,+91 9235917419,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Scooter,Inactive,3,37,4.9,152,9,20,45
+93,RDR-CHE-5093,Girish Babu,+91 8210152642,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Bike,Active,2.6,29,4,379,32,32,100
+94,RDR-CHE-5094,Suresh Mishra,+91 8222500131,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Bike,Active,0.8,35,4.5,316,25,25,100
+95,RDR-CHE-5095,Ramesh Reddy,+91 9426240903,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Scooter,Active,3,28,4.4,351,40,40,100
+96,RDR-CHE-5096,Rakesh Gupta,+91 9508427798,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Petrol Scooter,Active,4.4,28,4,287,20,20,100
+97,RDR-CHE-5097,Rakesh Sharma,+91 9894664845,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Scooter,On Leave,3.3,23,4.5,479,25,25,100
+98,RDR-CHE-5098,Pradeep Gupta,+91 7692697161,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Scooter,Active,2.5,34,4.2,140,17,17,100
+99,RDR-CHE-5099,Karthik Gupta,+91 8859088046,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Scooter,Inactive,0.8,22,4.9,256,7,13,54
+100,RDR-CHE-5100,Girish Mukherjee,+91 9963187150,DS-CHE-3579,Blinkit  -  Thiruvanmiyur Point,Chennai,Electric Bike,Active,3,35,3.7,114,49,49,100
+101,RDR-CHE-5101,Vikram Chandran,+91 7176675731,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Electric Scooter,On Leave,3.2,41,4.4,400,13,13,100
+102,RDR-CHE-5102,Sachin Shah,+91 7603260608,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Petrol Scooter,On Leave,4.7,31,4.3,164,21,34,62
+103,RDR-CHE-5103,Arun Patel,+91 9142800191,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Electric Bike,On Leave,3.2,15,3.6,444,12,12,100
+104,RDR-CHE-5104,Satish Chandran,+91 9730418447,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Electric Bike,Inactive,3.5,23,4.4,426,34,41,83
+105,RDR-CHE-5105,Salman Subramanian,+91 7605196410,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Petrol Scooter,Active,1.8,33,4.2,108,12,12,100
+106,RDR-CHE-5106,Naresh Patel,+91 8473620340,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Petrol Scooter,Active,1,20,4,443,36,36,100
+107,RDR-CHE-5107,Nandhu Das,+91 8811443654,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Electric Bike,Inactive,3,29,3.6,228,38,38,100
+108,RDR-CHE-5108,Rohit Pandey,+91 7929517022,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Petrol Scooter,Active,4.9,36,4.8,235,41,41,100
+109,RDR-CHE-5109,Sunil Chauhan,+91 7301415220,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Petrol Scooter,On Leave,2.7,29,4.6,162,12,28,43
+110,RDR-CHE-5110,Rajesh Mishra,+91 9240674381,DS-CHE-3254,Blinkit  -  Perumbakkam Nano,Chennai,Electric Bike,Active,3.6,18,3.5,238,19,30,63
+111,RDR-CHE-5111,Girish Bose,+91 7862123506,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Scooter,Active,3,17,3.8,180,14,14,100
+112,RDR-CHE-5112,Anil Shah,+91 7795472980,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Bike,Active,3.7,31,4.6,491,27,27,100
+113,RDR-CHE-5113,Lokesh Chandran,+91 8607042130,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Scooter,Active,2.2,44,4.4,262,27,37,73
+114,RDR-CHE-5114,Javed Murthy,+91 7174958005,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Scooter,On Leave,2.4,44,4.7,388,14,31,45
+115,RDR-CHE-5115,Vikram Chandran,+91 7403696046,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Petrol Scooter,Inactive,3.1,36,4.2,478,27,30,90
+116,RDR-CHE-5116,Ramesh Shah,+91 9620057604,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Scooter,Active,2.9,29,4.9,360,9,15,60
+117,RDR-CHE-5117,Ganesh Iyer,+91 7713963047,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Scooter,Inactive,2.3,25,4.6,330,8,10,80
+118,RDR-CHE-5118,Imran Rao,+91 8514548900,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Bike,On Leave,3.4,19,4.2,140,14,14,100
+119,RDR-CHE-5119,Karthik Reddy,+91 9733701411,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Electric Scooter,Active,4.3,18,4.3,127,34,50,68
+120,RDR-CHE-5120,Sunil Kumar,+91 9254785699,DS-CHE-1052,Blinkit  -  Royapuram III,Chennai,Petrol Scooter,On Leave,1.2,30,4.7,234,10,21,48
+121,RDR-CHE-5121,Rohit Pandey,+91 9843785903,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Electric Scooter,Active,2,36,4.8,300,35,35,100
+122,RDR-CHE-5122,Dinesh Pandey,+91 9871716956,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Electric Bike,Active,2.9,34,3.6,427,43,43,100
+123,RDR-CHE-5123,Girish Menon,+91 8344261532,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Petrol Scooter,Active,0.9,35,4.6,367,19,23,83
+124,RDR-CHE-5124,Vijay Shah,+91 7845178074,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Electric Scooter,Active,2,16,3.9,132,35,35,100
+125,RDR-CHE-5125,Harish Chauhan,+91 7362204999,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Petrol Scooter,Active,4.1,20,3.8,147,19,36,53
+126,RDR-CHE-5126,Rakesh Babu,+91 8765408938,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Petrol Scooter,Active,3.1,22,4.2,161,11,18,61
+127,RDR-CHE-5127,Rohit Shah,+91 8816014770,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Bicycle,Inactive,4.6,36,4.3,315,20,35,57
+128,RDR-CHE-5128,Manoj Shah,+91 8730900313,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Electric Scooter,Inactive,3.6,29,4.8,392,31,31,100
+129,RDR-CHE-5129,Ganesh Joshi,+91 8214518079,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Electric Scooter,Active,3.1,37,3.9,198,39,39,100
+130,RDR-CHE-5130,Shankar Joshi,+91 8108695125,DS-CHE-1644,Zepto  -  Gerugambakkam Zone,Chennai,Petrol Scooter,On Leave,3.9,16,4.9,271,19,26,73
+131,RDR-CHE-5131,Javed Das,+91 8932945529,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Petrol Scooter,On Leave,2.1,35,3.8,459,35,35,100
+132,RDR-CHE-5132,Rohit Menon,+91 9924065468,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Petrol Scooter,Inactive,3.3,43,4.4,313,32,45,71
+133,RDR-CHE-5133,Karthik Yadav,+91 8135824891,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Petrol Scooter,On Leave,0.9,24,4,134,10,10,100
+134,RDR-CHE-5134,Lokesh Nair,+91 7241905500,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Petrol Scooter,Inactive,2.1,31,4.9,326,17,17,100
+135,RDR-CHE-5135,Pradeep Mishra,+91 8965960427,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Electric Scooter,Inactive,4.1,29,4.9,200,44,44,100
+136,RDR-CHE-5136,Ramesh Subramanian,+91 7826197069,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Petrol Scooter,Inactive,4.9,40,4.3,230,19,24,79
+137,RDR-CHE-5137,Deepak Rajan,+91 8114945047,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Electric Scooter,Active,2.2,38,4.5,356,14,31,45
+138,RDR-CHE-5138,Ashok Joshi,+91 9498866784,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Electric Scooter,Active,0.6,43,4.9,104,23,23,100
+139,RDR-CHE-5139,Varun Rao,+91 9337691219,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Petrol Scooter,On Leave,2.6,37,4,317,35,35,100
+140,RDR-CHE-5140,Lokesh Singh,+91 7148690765,DS-CHE-2763,Blinkit  -  Nanganallur I,Chennai,Electric Bike,Active,2.7,18,3.9,354,37,37,100
+141,RDR-CHE-5141,Venkat Reddy,+91 8587096273,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Electric Scooter,Inactive,3.6,32,4.1,497,32,32,100
+142,RDR-CHE-5142,Javed Krishnan,+91 7545478870,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Petrol Scooter,Inactive,3.3,45,4.9,458,23,23,100
+143,RDR-CHE-5143,Karthik Iyer,+91 8333291547,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Petrol Scooter,Inactive,4.3,18,5,382,29,33,88
+144,RDR-CHE-5144,Harish Sen,+91 9485123110,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Electric Scooter,Active,4.9,45,4.8,492,7,11,64
+145,RDR-CHE-5145,Sunil Patel,+91 9327746886,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Petrol Scooter,Active,0.6,40,4,306,35,35,100
+146,RDR-CHE-5146,Sanjay Rajan,+91 9320337809,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Electric Scooter,On Leave,1.4,21,4.7,114,23,23,100
+147,RDR-CHE-5147,Naveen Pandey,+91 7946799779,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Electric Bike,Active,4.4,19,5,445,16,16,100
+148,RDR-CHE-5148,Venkat Mishra,+91 7218032515,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Petrol Scooter,Active,0.6,40,4.7,141,12,12,100
+149,RDR-CHE-5149,Ashok Pandey,+91 7287095435,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Electric Scooter,Active,2.4,18,4.6,479,14,32,44
+150,RDR-CHE-5150,Pavan Shah,+91 8651085057,DS-CHE-3776,Zepto  -  Chromepet Max,Chennai,Petrol Scooter,Active,1.5,34,3.6,278,12,27,44
+151,RDR-BLR-5151,Shankar Roy,+91 8591819409,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Petrol Scooter,Active,5,42,4.1,162,25,47,53
+152,RDR-BLR-5152,Satish Singh,+91 8864935082,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Electric Bike,Active,0.9,34,3.7,451,20,44,45
+153,RDR-BLR-5153,Sanjay Mishra,+91 9779760958,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Petrol Scooter,On Leave,2.2,34,4.3,330,24,24,100
+154,RDR-BLR-5154,Sunil Roy,+91 9561923010,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Electric Scooter,On Leave,4.3,35,4.8,340,34,34,100
+155,RDR-BLR-5155,Srikanth Krishnan,+91 7561784080,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Petrol Scooter,Active,2,29,4.1,151,36,46,78
+156,RDR-BLR-5156,Farhan Singh,+91 8558234365,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Electric Scooter,Active,4.8,36,4.9,195,37,37,100
+157,RDR-BLR-5157,Manoj Patel,+91 7200105056,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Petrol Scooter,On Leave,2.2,19,4.3,487,19,19,100
+158,RDR-BLR-5158,Ashok Sen,+91 9453954673,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Petrol Scooter,Active,4.4,45,4.6,321,33,48,69
+159,RDR-BLR-5159,Farhan Sharma,+91 8744685429,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Electric Scooter,Active,2.8,19,4.5,330,17,26,65
+160,RDR-BLR-5160,Naveen Babu,+91 7475932035,DS-BLR-1521,Blinkit  -  CV Raman Nagar Mini,Bangalore,Electric Bike,Active,3.9,33,3.8,336,31,48,65
+161,RDR-BLR-5161,Vinod Babu,+91 9924024405,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Electric Bike,On Leave,3.4,15,4.4,242,26,31,84
+162,RDR-BLR-5162,Shankar Chandran,+91 9387169808,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Bicycle,Active,3.9,44,4,270,16,35,46
+163,RDR-BLR-5163,Arjun Nair,+91 7708082645,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Petrol Scooter,Active,3.8,15,3.6,128,19,34,56
+164,RDR-BLR-5164,Balaji Verma,+91 8550791704,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Petrol Scooter,Active,1.9,25,4.7,135,13,26,50
+165,RDR-BLR-5165,Prakash Bose,+91 7156488296,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Electric Scooter,On Leave,0.7,17,3.9,112,14,22,64
+166,RDR-BLR-5166,Shankar Chauhan,+91 8751842899,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Petrol Scooter,Active,3.9,18,4,259,22,29,76
+167,RDR-BLR-5167,Anil Yadav,+91 9828519068,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Petrol Scooter,Active,1.9,22,4.1,426,26,34,76
+168,RDR-BLR-5168,Umesh Sharma,+91 7319497661,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Electric Scooter,Active,1.1,23,3.9,286,8,13,62
+169,RDR-BLR-5169,Anil Kumar,+91 8902100304,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Petrol Scooter,Active,2.9,22,4.3,342,19,19,100
+170,RDR-BLR-5170,Shankar Rajan,+91 8177390472,DS-BLR-1737,Blinkit  -  Vijayanagar Nano,Bangalore,Electric Scooter,On Leave,2.5,29,4.9,185,12,12,100
+171,RDR-BLR-5171,Varun Mukherjee,+91 8715683222,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Petrol Scooter,On Leave,1.8,27,3.5,383,50,50,100
+172,RDR-BLR-5172,Varun Nair,+91 9594025283,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Electric Bike,Inactive,0.9,42,3.7,165,18,27,67
+173,RDR-BLR-5173,Vinod Mukherjee,+91 8662600500,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Electric Scooter,Inactive,3.9,22,4,269,45,45,100
+174,RDR-BLR-5174,Pradeep Patel,+91 9779919809,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Electric Scooter,Active,4.6,26,4,144,31,31,100
+175,RDR-BLR-5175,Devraj Chandran,+91 7353691745,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Electric Scooter,Active,1.3,19,4.6,161,19,43,44
+176,RDR-BLR-5176,Devraj Patel,+91 7929839316,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Petrol Scooter,Active,3,33,4.2,233,17,17,100
+177,RDR-BLR-5177,Prakash Pillai,+91 9770575153,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Electric Scooter,Inactive,1.9,29,3.6,383,30,49,61
+178,RDR-BLR-5178,Arun Pillai,+91 8955052486,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Electric Scooter,Active,2.8,24,4.2,127,15,28,54
+179,RDR-BLR-5179,Karthik Sharma,+91 8993027458,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Electric Scooter,On Leave,4.9,17,4.4,207,22,50,44
+180,RDR-BLR-5180,Mahesh Joshi,+91 8723123952,DS-BLR-1740,Zepto  -  Whitefield Plus,Bangalore,Petrol Scooter,On Leave,4.5,29,4.9,143,26,46,57
+181,RDR-BLR-5181,Prakash Pillai,+91 7445236735,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Petrol Scooter,Active,4.8,29,3.7,439,15,15,100
+182,RDR-BLR-5182,Ajay Iyer,+91 7641755366,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Petrol Scooter,Active,3.7,29,4.3,385,35,35,100
+183,RDR-BLR-5183,Rakesh Nair,+91 8500346767,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Electric Bike,Active,4,36,4.4,430,43,43,100
+184,RDR-BLR-5184,Girish Pillai,+91 8170772317,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Electric Scooter,Active,2.2,23,4.6,227,11,15,73
+185,RDR-BLR-5185,Shankar Rao,+91 9261462131,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Electric Scooter,Active,1.1,26,4,447,29,46,63
+186,RDR-BLR-5186,Devraj Iyer,+91 9520861681,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Electric Scooter,On Leave,0.9,32,4.1,330,42,42,100
+187,RDR-BLR-5187,Ajay Chandran,+91 7819532005,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Petrol Scooter,Inactive,5,44,4.3,289,31,31,100
+188,RDR-BLR-5188,Devraj Menon,+91 8645985356,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Electric Scooter,Active,1.3,21,4,324,30,30,100
+189,RDR-BLR-5189,Abdul Das,+91 7343248743,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Electric Bike,Active,1.8,40,3.7,484,15,15,100
+190,RDR-BLR-5190,Abdul Sen,+91 9665359037,DS-BLR-1660,Blinkit  -  Marathahalli III,Bangalore,Bicycle,Active,3.9,19,4.4,476,11,15,73
+191,RDR-BLR-5191,Ramesh Nair,+91 7992649957,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Petrol Scooter,On Leave,4.6,38,4.2,382,13,13,100
+192,RDR-BLR-5192,Lokesh Mehta,+91 9872649234,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Electric Scooter,Active,1.8,38,4.7,220,28,39,72
+193,RDR-BLR-5193,Naveen Sen,+91 7432288618,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Electric Bike,On Leave,4.6,21,4.1,215,16,20,80
+194,RDR-BLR-5194,Prakash Shah,+91 8926178355,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Electric Scooter,Active,2.9,45,3.7,332,39,39,100
+195,RDR-BLR-5195,Ganesh Rajan,+91 9248604290,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Electric Bike,Active,2.7,26,4.3,358,40,40,100
+196,RDR-BLR-5196,Vijay Iyer,+91 9233871736,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Electric Scooter,On Leave,1.7,43,4.3,458,33,33,100
+197,RDR-BLR-5197,Vinod Patel,+91 7976928440,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Petrol Scooter,Active,0.6,16,4.1,297,18,18,100
+198,RDR-BLR-5198,Harish Gupta,+91 8187623171,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Electric Scooter,Active,4.7,41,4.6,236,12,12,100
+199,RDR-BLR-5199,Ajay Rajan,+91 7247746438,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Bicycle,Inactive,2.6,41,3.7,417,40,40,100
+200,RDR-BLR-5200,Imran Das,+91 8760725160,DS-BLR-1411,Blinkit  -  Richmond Town Hub,Bangalore,Bicycle,Active,1.7,41,3.7,264,49,49,100
+201,RDR-BLR-5201,Farhan Bose,+91 9554466340,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Scooter,Active,1.9,16,3.9,324,46,46,100
+202,RDR-BLR-5202,Girish Rajan,+91 9590822013,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Scooter,Inactive,2.7,32,3.5,406,45,45,100
+203,RDR-BLR-5203,Mahesh Mukherjee,+91 7871531100,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Scooter,Active,3.3,22,4.4,333,33,33,100
+204,RDR-BLR-5204,Mohan Menon,+91 9191927283,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Petrol Scooter,Active,4.8,32,4.3,271,40,40,100
+205,RDR-BLR-5205,Mahesh Sen,+91 7519246503,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Bike,Active,2.2,26,3.9,251,15,15,100
+206,RDR-BLR-5206,Ravi Mehta,+91 7470228863,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Scooter,On Leave,1,33,4.6,414,11,11,100
+207,RDR-BLR-5207,Ajay Reddy,+91 7478278218,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Petrol Scooter,Inactive,1.3,39,4.5,473,29,29,100
+208,RDR-BLR-5208,Nandhu Das,+91 9295719504,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Bike,Active,4,29,3.6,259,17,37,46
+209,RDR-BLR-5209,Ganesh Sharma,+91 7144996163,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Scooter,Active,2.3,41,4.3,195,13,20,65
+210,RDR-BLR-5210,Rohit Sharma,+91 9305195749,DS-BLR-1678,Blinkit  -  Electronic City Nano,Bangalore,Electric Scooter,Inactive,0.7,35,4,332,13,13,100
+211,RDR-BLR-5211,Anil Rajan,+91 8569172971,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Electric Bike,On Leave,4.5,27,4,279,11,24,46
+212,RDR-BLR-5212,Mohan Das,+91 9634211672,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Electric Scooter,On Leave,1.7,17,4.6,212,11,15,73
+213,RDR-BLR-5213,Deepak Chauhan,+91 9982982227,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Electric Scooter,Active,1,25,4.5,417,39,39,100
+214,RDR-BLR-5214,Rahul Shah,+91 9870584681,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Petrol Scooter,On Leave,2.1,16,4.6,151,29,47,62
+215,RDR-BLR-5215,Pranav Bose,+91 8394801573,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Petrol Scooter,On Leave,0.8,36,4.5,367,6,11,55
+216,RDR-BLR-5216,Harish Roy,+91 9829511584,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Electric Scooter,Active,4.3,36,4.7,394,24,24,100
+217,RDR-BLR-5217,Karthik Reddy,+91 7353398109,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Petrol Scooter,Active,2.2,33,3.5,485,15,20,75
+218,RDR-BLR-5218,Ramesh Menon,+91 8498320110,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Electric Scooter,On Leave,3.1,31,4.1,486,9,17,53
+219,RDR-BLR-5219,Varun Pillai,+91 8368018471,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Electric Bike,Active,1.3,31,4.1,212,30,35,86
+220,RDR-BLR-5220,Srikanth Singh,+91 8932111777,DS-BLR-1626,Blinkit  -  Kengeri Plus,Bangalore,Electric Scooter,Active,5,24,4.5,200,7,14,50
+221,RDR-BLR-5221,Naresh Verma,+91 7245737277,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Electric Bike,Active,4.5,29,5,212,15,15,100
+222,RDR-BLR-5222,Satish Babu,+91 8817087513,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Electric Scooter,Active,2.9,43,3.9,180,35,35,100
+223,RDR-BLR-5223,Pradeep Iyer,+91 9851854702,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Petrol Scooter,On Leave,2.8,18,5,286,13,13,100
+224,RDR-BLR-5224,Sanjay Gupta,+91 8128222260,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Electric Scooter,Active,2.6,32,3.7,212,15,28,54
+225,RDR-BLR-5225,Deepak Patel,+91 8527521016,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Electric Bike,On Leave,2.9,39,4.1,101,13,29,45
+226,RDR-BLR-5226,Prakash Patel,+91 7440405868,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Petrol Scooter,Active,3.6,26,3.7,229,19,42,45
+227,RDR-BLR-5227,Abdul Sen,+91 9731130400,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Electric Scooter,Inactive,2.4,44,4.8,319,13,29,45
+228,RDR-BLR-5228,Anil Roy,+91 7426551245,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Electric Scooter,Active,3.7,26,4.9,153,11,21,52
+229,RDR-BLR-5229,Balaji Murthy,+91 8184675178,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Electric Scooter,On Leave,3,19,4.4,442,7,10,70
+230,RDR-BLR-5230,Rakesh Sen,+91 7639633807,DS-BLR-1513,Blinkit  -  Yelahanka Express,Bangalore,Petrol Scooter,Active,3.1,20,4.5,323,35,35,100
+231,RDR-BLR-5231,Farhan Murthy,+91 9462516271,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Electric Bike,Active,4.2,15,3.6,324,11,23,48
+232,RDR-BLR-5232,Devraj Subramanian,+91 9384172112,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Petrol Scooter,On Leave,2.4,35,3.5,484,38,47,81
+233,RDR-BLR-5233,Girish Sen,+91 8789242701,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Electric Bike,Active,4.1,36,4.1,225,46,46,100
+234,RDR-BLR-5234,Sunil Patel,+91 9164331134,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Electric Scooter,Active,2.6,25,4.4,229,20,20,100
+235,RDR-BLR-5235,Varun Babu,+91 9442863363,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Petrol Scooter,Inactive,4.9,19,4.6,152,20,45,44
+236,RDR-BLR-5236,Mahesh Sen,+91 7442648079,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Electric Scooter,Active,2.5,19,3.6,271,22,22,100
+237,RDR-BLR-5237,Sachin Joshi,+91 9548968760,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Electric Scooter,Inactive,1.2,25,4.9,317,12,12,100
+238,RDR-BLR-5238,Farhan Pandey,+91 7919395339,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Electric Scooter,Inactive,2.6,43,4,259,31,42,74
+239,RDR-BLR-5239,Ravi Patel,+91 8642716859,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Petrol Scooter,Active,3.1,16,3.6,297,15,15,100
+240,RDR-BLR-5240,Naresh Bose,+91 9822113500,DS-BLR-1859,Zepto  -  Whitefield Prime,Bangalore,Petrol Scooter,Active,4.3,28,3.7,346,9,19,47
+241,RDR-BLR-5241,Rohit Krishnan,+91 8920184955,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Petrol Scooter,Active,0.7,32,3.8,423,14,14,100
+242,RDR-BLR-5242,Srikanth Yadav,+91 7514838889,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Petrol Scooter,On Leave,1.8,34,4.5,302,18,32,56
+243,RDR-BLR-5243,Anil Reddy,+91 7522950895,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Electric Scooter,Inactive,3,26,4.6,283,19,19,100
+244,RDR-BLR-5244,Ganesh Bose,+91 9530986098,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Petrol Scooter,Active,1.1,25,4.7,222,9,11,82
+245,RDR-BLR-5245,Balaji Shah,+91 7750967273,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Electric Bike,Active,4.7,25,3.7,354,22,22,100
+246,RDR-BLR-5246,Rakesh Krishnan,+91 8737506993,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Electric Scooter,Inactive,2.9,37,4.3,393,49,49,100
+247,RDR-BLR-5247,Pavan Chandran,+91 7495521185,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Electric Scooter,Active,2.4,24,4.7,379,5,11,45
+248,RDR-BLR-5248,Farhan Babu,+91 9775663302,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Bicycle,Active,4.9,40,5,424,29,29,100
+249,RDR-BLR-5249,Ashok Mukherjee,+91 7874597473,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Electric Scooter,Active,2.9,38,4.4,471,10,10,100
+250,RDR-BLR-5250,Dinesh Reddy,+91 9360056579,DS-BLR-1136,Blinkit  -  Peenya IV,Bangalore,Bicycle,Inactive,1,15,4.2,197,46,46,100
+251,RDR-BLR-5251,Lokesh Reddy,+91 8841419015,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Electric Scooter,Active,3.3,30,4.8,297,14,18,78
+252,RDR-BLR-5252,Javed Krishnan,+91 7857820386,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Electric Scooter,Active,2,36,4.2,494,15,26,58
+253,RDR-BLR-5253,Dinesh Pandey,+91 7593559955,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Electric Bike,Active,2.1,39,4.8,339,18,18,100
+254,RDR-BLR-5254,Satish Pillai,+91 9383856728,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Petrol Scooter,Active,1.6,32,3.9,243,20,20,100
+255,RDR-BLR-5255,Rahul Subramanian,+91 8856881618,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Electric Scooter,On Leave,1.9,26,4.3,196,11,24,46
+256,RDR-BLR-5256,Farhan Mishra,+91 8230861323,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Petrol Scooter,Active,4.5,27,4.7,300,15,33,45
+257,RDR-BLR-5257,Abdul Rajan,+91 7411871167,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Bicycle,Inactive,0.9,44,4.2,223,39,47,83
+258,RDR-BLR-5258,Rohit Krishnan,+91 8329766590,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Electric Scooter,Active,4.7,37,3.9,286,44,44,100
+259,RDR-BLR-5259,Vijay Bose,+91 9730104453,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Electric Scooter,Active,4.6,22,4.5,425,39,39,100
+260,RDR-BLR-5260,Suresh Singh,+91 8454650074,DS-BLR-1811,Zepto  -  Begur Zone,Bangalore,Petrol Scooter,Active,4,15,4.9,448,18,40,45
+261,RDR-BLR-5261,Pradeep Chauhan,+91 9610778600,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Petrol Scooter,Active,4.8,25,3.9,358,14,14,100
+262,RDR-BLR-5262,Suresh Rao,+91 7800400428,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Petrol Scooter,Active,3.8,44,3.6,247,23,23,100
+263,RDR-BLR-5263,Mohan Chauhan,+91 7139019611,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Electric Bike,Active,2.7,44,4.6,351,11,20,55
+264,RDR-BLR-5264,Sachin Murthy,+91 7109950544,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Electric Scooter,On Leave,4.7,25,3.9,445,18,18,100
+265,RDR-BLR-5265,Devraj Sen,+91 9630334421,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Electric Bike,Active,2.8,23,3.8,246,21,43,49
+266,RDR-BLR-5266,Anil Pandey,+91 7885033297,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Petrol Scooter,Active,1.3,38,4,247,21,21,100
+267,RDR-BLR-5267,Sachin Mukherjee,+91 9913126162,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Electric Scooter,On Leave,3.4,27,4.7,451,44,44,100
+268,RDR-BLR-5268,Mahesh Pandey,+91 7530391423,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Petrol Scooter,Active,1.1,25,4.9,298,44,44,100
+269,RDR-BLR-5269,Arjun Mishra,+91 8352889019,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Petrol Scooter,Active,2,33,4.6,407,10,10,100
+270,RDR-BLR-5270,Arjun Mishra,+91 9486066116,DS-BLR-1076,Zepto  -  Begur Base,Bangalore,Petrol Scooter,Active,1,24,3.7,227,49,49,100
+271,RDR-BLR-5271,Satish Roy,+91 9926610534,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Electric Scooter,Active,4.6,24,4.1,138,31,31,100
+272,RDR-BLR-5272,Naveen Gupta,+91 7613443905,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Electric Scooter,On Leave,3.2,28,4.6,437,38,38,100
+273,RDR-BLR-5273,Pavan Subramanian,+91 9961135562,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Petrol Scooter,Active,1.6,39,4.4,459,17,17,100
+274,RDR-BLR-5274,Deepak Roy,+91 8667121569,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Petrol Scooter,Active,3,16,4.7,228,20,20,100
+275,RDR-BLR-5275,Mahesh Verma,+91 9676234459,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Electric Scooter,Active,2.8,18,4.5,366,50,50,100
+276,RDR-BLR-5276,Imran Mukherjee,+91 8197647841,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Electric Bike,Active,0.8,19,4.3,250,34,46,74
+277,RDR-BLR-5277,Sunil Mukherjee,+91 7700003920,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Petrol Scooter,Inactive,3.8,27,3.9,397,20,23,87
+278,RDR-BLR-5278,Arjun Krishnan,+91 7720956992,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Electric Scooter,Active,3.7,32,5,198,27,39,69
+279,RDR-BLR-5279,Manoj Rao,+91 8134075063,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Electric Scooter,Active,1.1,35,5,362,20,44,45
+280,RDR-BLR-5280,Devraj Chauhan,+91 8510684364,DS-BLR-1636,Blinkit  -  RT Nagar Plus,Bangalore,Petrol Scooter,Inactive,2.2,17,4.5,351,30,30,100
+281,RDR-BLR-5281,Shankar Babu,+91 9242796714,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Petrol Scooter,Active,1.3,32,4.1,243,46,46,100
+282,RDR-BLR-5282,Sanjay Krishnan,+91 7996382881,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Bicycle,Active,1.8,36,4.6,445,10,14,71
+283,RDR-BLR-5283,Vinod Sen,+91 8984076542,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Electric Scooter,Active,1.2,21,4.9,211,24,28,86
+284,RDR-BLR-5284,Farhan Subramanian,+91 7134593072,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Electric Bike,Active,3.9,43,4.8,159,10,23,43
+285,RDR-BLR-5285,Amit Verma,+91 7208337018,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Petrol Scooter,Active,3.5,42,3.6,468,27,35,77
+286,RDR-BLR-5286,Javed Sharma,+91 8571332733,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Electric Scooter,Active,4.4,16,3.7,101,13,13,100
+287,RDR-BLR-5287,Sachin Gupta,+91 9718593766,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Electric Scooter,Active,3.5,25,3.9,484,20,34,59
+288,RDR-BLR-5288,Ramesh Menon,+91 9337342839,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Petrol Scooter,Active,3,33,4.8,403,25,34,74
+289,RDR-BLR-5289,Mohan Pillai,+91 9558703133,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Petrol Scooter,Active,2,35,4.5,353,27,27,100
+290,RDR-BLR-5290,Balaji Pandey,+91 9547025173,DS-BLR-1973,Zepto  -  Anekal Flash,Bangalore,Petrol Scooter,Active,1.3,32,4.2,239,35,49,71
+291,RDR-BLR-5291,Naveen Yadav,+91 9254996504,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Electric Bike,Inactive,3,45,4.1,136,7,17,41
+292,RDR-BLR-5292,Balaji Reddy,+91 8360767346,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Electric Scooter,Active,0.9,29,4.8,259,39,48,81
+293,RDR-BLR-5293,Deepak Sen,+91 9990568217,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Electric Scooter,Active,3.5,34,3.6,108,49,49,100
+294,RDR-BLR-5294,Manoj Verma,+91 9877716824,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Petrol Scooter,Active,1.4,44,4,332,10,23,43
+295,RDR-BLR-5295,Arjun Verma,+91 7896152940,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Electric Scooter,Inactive,2.7,22,4.5,198,41,41,100
+296,RDR-BLR-5296,Imran Verma,+91 8356979659,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Petrol Scooter,On Leave,2.2,32,4.5,246,47,47,100
+297,RDR-BLR-5297,Rahul Mishra,+91 8650632566,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Electric Bike,Active,4.1,38,4.2,403,42,42,100
+298,RDR-BLR-5298,Varun Rao,+91 7498041381,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Electric Scooter,Active,4.4,38,3.7,307,32,32,100
+299,RDR-BLR-5299,Rohit Sen,+91 9721849977,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Petrol Scooter,Active,1.4,22,4.1,230,18,24,75
+300,RDR-BLR-5300,Amit Das,+91 9802879944,DS-BLR-1938,Blinkit  -  Peenya Hub,Bangalore,Electric Bike,Active,3.9,30,4.9,251,42,42,100
+301,RDR-MUM-5301,Devraj Krishnan,+91 8594811370,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Electric Scooter,On Leave,1.3,38,4.3,153,30,34,88
+302,RDR-MUM-5302,Mohan Rao,+91 9789137659,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Electric Bike,Active,4.3,17,4.9,219,26,26,100
+303,RDR-MUM-5303,Shankar Sharma,+91 7542802779,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Electric Scooter,On Leave,0.8,19,3.5,260,36,42,86
+304,RDR-MUM-5304,Mahesh Shah,+91 8164907817,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Petrol Scooter,On Leave,3.3,30,4.5,215,5,11,45
+305,RDR-MUM-5305,Ravi Kumar,+91 9692322761,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Petrol Scooter,Active,3.7,32,5,174,16,23,70
+306,RDR-MUM-5306,Ravi Roy,+91 9823737375,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Petrol Scooter,Inactive,1.3,44,3.6,212,49,49,100
+307,RDR-MUM-5307,Ramesh Gupta,+91 7765484610,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Petrol Scooter,Inactive,1.7,27,3.6,203,34,49,69
+308,RDR-MUM-5308,Santosh Shah,+91 9361142486,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Electric Bike,Active,3.6,42,3.6,439,32,48,67
+309,RDR-MUM-5309,Devraj Subramanian,+91 7200395400,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Petrol Scooter,Active,2.6,35,3.5,353,15,15,100
+310,RDR-MUM-5310,Pradeep Patel,+91 8565906941,DS-MUM-1696,Zepto  -  Mulund Flash,Mumbai,Petrol Scooter,Active,4.9,18,4.8,326,15,15,100
+311,RDR-MUM-5311,Karthik Gupta,+91 7843338269,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Electric Bike,Active,0.7,17,4.5,211,12,12,100
+312,RDR-MUM-5312,Vikram Murthy,+91 9705064109,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Petrol Scooter,Active,4.3,15,4.9,198,16,16,100
+313,RDR-MUM-5313,Ashok Reddy,+91 9981437228,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Electric Scooter,Active,1.2,22,4.4,252,17,17,100
+314,RDR-MUM-5314,Dinesh Menon,+91 9456192204,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Electric Scooter,On Leave,4.1,37,4.6,448,21,24,88
+315,RDR-MUM-5315,Mahesh Krishnan,+91 8157656107,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Electric Scooter,Active,0.8,34,4.7,483,33,38,87
+316,RDR-MUM-5316,Umesh Joshi,+91 8131810311,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Petrol Scooter,On Leave,2.5,22,4,465,42,42,100
+317,RDR-MUM-5317,Dinesh Chauhan,+91 7829816799,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Petrol Scooter,Active,4,24,4.7,437,30,39,77
+318,RDR-MUM-5318,Imran Patel,+91 7387732777,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Electric Scooter,On Leave,3.4,38,4.1,293,48,48,100
+319,RDR-MUM-5319,Harish Singh,+91 7105578324,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Electric Bike,Active,3.9,18,3.7,409,36,36,100
+320,RDR-MUM-5320,Mohan Chauhan,+91 8698058121,DS-MUM-1667,Zepto  -  Belapur Nano,Mumbai,Petrol Scooter,Active,0.6,26,4.3,262,45,45,100
+321,RDR-MUM-5321,Umesh Bose,+91 8513646070,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Bicycle,Active,4,38,4.9,307,20,38,53
+322,RDR-MUM-5322,Amit Mukherjee,+91 9282088279,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Petrol Scooter,Active,1.7,23,4.2,268,24,47,51
+323,RDR-MUM-5323,Manoj Nair,+91 8396311802,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Petrol Scooter,Active,0.8,23,4.9,260,42,42,100
+324,RDR-MUM-5324,Farhan Pillai,+91 8737594763,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Petrol Scooter,Active,1.1,15,4.9,167,46,46,100
+325,RDR-MUM-5325,Ajay Chandran,+91 9507903732,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Electric Bike,Active,2,41,4.7,388,36,36,100
+326,RDR-MUM-5326,Devraj Bose,+91 7422589929,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Electric Scooter,Inactive,1.4,25,3.8,497,37,42,88
+327,RDR-MUM-5327,Santosh Pandey,+91 8889065340,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Petrol Scooter,Active,3.1,22,4,376,9,13,69
+328,RDR-MUM-5328,Vikram Chandran,+91 8491932454,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Electric Scooter,Active,3.2,32,3.8,403,31,31,100
+329,RDR-MUM-5329,Abdul Sen,+91 7880839406,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Petrol Scooter,On Leave,2.5,24,4.7,483,9,11,82
+330,RDR-MUM-5330,Manoj Chandran,+91 8822604249,DS-MUM-1063,Blinkit  -  Belapur Flash,Mumbai,Petrol Scooter,On Leave,1.6,36,3.7,491,19,19,100
+331,RDR-MUM-5331,Vinod Rajan,+91 8179419456,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Petrol Scooter,Active,3.1,32,4.3,234,14,14,100
+332,RDR-MUM-5332,Nandhu Chauhan,+91 9139476288,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Petrol Scooter,Active,4.5,32,4.4,294,19,19,100
+333,RDR-MUM-5333,Deepak Singh,+91 7806094391,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Petrol Scooter,Active,3.3,33,5,227,21,42,50
+334,RDR-MUM-5334,Satish Pillai,+91 8908186980,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Electric Scooter,On Leave,1,18,3.9,132,26,47,55
+335,RDR-MUM-5335,Mahesh Krishnan,+91 9699140867,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Petrol Scooter,Active,2.5,27,4.2,275,22,22,100
+336,RDR-MUM-5336,Satish Mukherjee,+91 9637371044,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Electric Scooter,Inactive,2.7,24,4.1,470,18,40,45
+337,RDR-MUM-5337,Deepak Singh,+91 9252122560,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Electric Scooter,Active,4,31,4.2,474,27,45,60
+338,RDR-MUM-5338,Pavan Singh,+91 8875235090,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Petrol Scooter,Active,1.9,40,4.6,121,15,33,45
+339,RDR-MUM-5339,Ravi Babu,+91 8795752405,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Electric Scooter,Inactive,4.7,38,3.9,337,24,24,100
+340,RDR-MUM-5340,Mohan Sen,+91 7455397438,DS-MUM-1533,Zepto  -  Chembur Nano,Mumbai,Petrol Scooter,Inactive,1.5,27,4.4,257,38,38,100
+341,RDR-MUM-5341,Mohan Pillai,+91 9564000836,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Electric Scooter,On Leave,4.5,29,4.4,137,15,17,88
+342,RDR-MUM-5342,Dinesh Kumar,+91 9330635563,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Electric Scooter,On Leave,4.1,17,4.4,329,10,14,71
+343,RDR-MUM-5343,Venkat Nair,+91 8450023635,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Electric Scooter,Active,3.5,30,4.3,464,17,38,45
+344,RDR-MUM-5344,Girish Pandey,+91 9517298229,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Petrol Scooter,Active,2.1,42,4.2,150,13,13,100
+345,RDR-MUM-5345,Mohan Chandran,+91 9858049231,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Electric Bike,Inactive,3.2,36,3.7,363,15,21,71
+346,RDR-MUM-5346,Anil Gupta,+91 8225572934,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Electric Scooter,On Leave,2.8,28,4.4,382,11,11,100
+347,RDR-MUM-5347,Prakash Joshi,+91 8299451515,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Petrol Scooter,Active,4.6,44,5,126,19,36,53
+348,RDR-MUM-5348,Srikanth Nair,+91 8410133983,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Electric Scooter,Active,2.5,16,4.8,325,40,40,100
+349,RDR-MUM-5349,Arjun Das,+91 7309517616,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Electric Bike,Inactive,2.8,30,4.1,376,24,45,53
+350,RDR-MUM-5350,Naresh Chauhan,+91 9576582183,DS-MUM-1066,Blinkit  -  Worli Point,Mumbai,Petrol Scooter,Active,0.6,39,3.8,385,45,45,100
+351,RDR-MUM-5351,Karthik Mishra,+91 7677252858,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Electric Scooter,On Leave,3,39,4.6,196,16,35,46
+352,RDR-MUM-5352,Srikanth Roy,+91 7714947037,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Electric Scooter,On Leave,4.2,26,4.3,383,36,36,100
+353,RDR-MUM-5353,Salman Sharma,+91 9573913756,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Petrol Scooter,Inactive,1,41,4.5,466,12,14,86
+354,RDR-MUM-5354,Amit Yadav,+91 7582896428,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Electric Scooter,Inactive,0.9,42,5,416,24,29,83
+355,RDR-MUM-5355,Abdul Rajan,+91 7325354965,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Electric Bike,Active,2.1,37,4.4,403,9,20,45
+356,RDR-MUM-5356,Vinod Nair,+91 9249502403,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Petrol Scooter,Inactive,4.1,33,4,246,16,19,84
+357,RDR-MUM-5357,Vikram Bose,+91 9280793819,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Electric Scooter,On Leave,1.8,23,4.9,103,22,49,45
+358,RDR-MUM-5358,Mahesh Murthy,+91 9975293837,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Electric Scooter,Inactive,4,44,3.6,134,47,47,100
+359,RDR-MUM-5359,Vikram Babu,+91 9236245128,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Petrol Scooter,Active,1.2,25,4.7,291,12,15,80
+360,RDR-MUM-5360,Salman Chandran,+91 9521659217,DS-MUM-1621,Blinkit  -  Andheri East Hub,Mumbai,Petrol Scooter,Active,1.7,28,4.1,148,17,17,100
+361,RDR-MUM-5361,Manoj Pillai,+91 7532557724,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Petrol Scooter,Active,4.7,26,4.2,116,20,32,62
+362,RDR-MUM-5362,Naresh Pandey,+91 9102655449,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Electric Bike,Inactive,0.9,29,4.5,271,35,35,100
+363,RDR-MUM-5363,Nandhu Mehta,+91 7954352670,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Petrol Scooter,Active,2.4,21,4.2,319,21,21,100
+364,RDR-MUM-5364,Varun Chandran,+91 8462661837,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Petrol Scooter,Active,4.3,40,4,257,27,35,77
+365,RDR-MUM-5365,Satish Subramanian,+91 7149330844,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Electric Scooter,On Leave,2.6,18,4.9,145,18,22,82
+366,RDR-MUM-5366,Pradeep Shah,+91 8100725768,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Electric Bike,Active,5,44,3.7,472,22,49,45
+367,RDR-MUM-5367,Devraj Yadav,+91 7394226159,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Electric Scooter,Active,0.9,36,4.9,105,13,27,48
+368,RDR-MUM-5368,Pradeep Sharma,+91 8771737478,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Electric Scooter,On Leave,1.6,35,3.6,198,25,34,74
+369,RDR-MUM-5369,Vijay Kumar,+91 7611967311,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Electric Scooter,Active,2.8,29,3.5,479,34,42,81
+370,RDR-MUM-5370,Nandhu Pandey,+91 7553456129,DS-MUM-1346,Blinkit  -  Navi Mumbai IV,Mumbai,Petrol Scooter,Active,1.5,17,4.6,332,49,49,100
+371,RDR-MUM-5371,Vijay Singh,+91 8494666352,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Electric Bike,Active,4,39,4.8,136,21,21,100
+372,RDR-MUM-5372,Devraj Menon,+91 7173456403,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Petrol Scooter,Active,3.4,29,4,379,28,45,62
+373,RDR-MUM-5373,Rajesh Pillai,+91 9262536735,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Electric Bike,On Leave,2.5,21,3.6,448,13,13,100
+374,RDR-MUM-5374,Vijay Reddy,+91 7733050169,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Petrol Scooter,Active,2.4,40,3.7,401,14,14,100
+375,RDR-MUM-5375,Vikram Pillai,+91 7366467312,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Petrol Scooter,On Leave,3.2,39,4.9,280,46,46,100
+376,RDR-MUM-5376,Ravi Babu,+91 9423893509,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Electric Scooter,On Leave,1.3,27,3.9,194,17,17,100
+377,RDR-MUM-5377,Suresh Rajan,+91 7631381642,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Electric Scooter,Active,3.4,17,4.3,198,37,37,100
+378,RDR-MUM-5378,Arjun Mehta,+91 8241715543,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Electric Scooter,Inactive,2.4,32,4.5,287,40,40,100
+379,RDR-MUM-5379,Salman Das,+91 7117920106,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Petrol Scooter,Active,1.5,44,3.6,215,18,18,100
+380,RDR-MUM-5380,Santosh Roy,+91 8774922644,DS-MUM-1490,Blinkit  -  Ghatkopar Hub,Mumbai,Petrol Scooter,On Leave,2.4,27,3.6,290,23,38,61
+381,RDR-MUM-5381,Venkat Sen,+91 9263939376,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Electric Scooter,Active,2.8,21,5,352,19,23,83
+382,RDR-MUM-5382,Ramesh Sen,+91 8519544755,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Petrol Scooter,On Leave,3.4,35,3.6,260,25,49,51
+383,RDR-MUM-5383,Nandhu Chauhan,+91 9356234948,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Electric Scooter,Active,2.5,29,4.4,355,32,50,64
+384,RDR-MUM-5384,Suresh Yadav,+91 9896387342,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Petrol Scooter,Active,0.6,19,4.6,422,14,31,45
+385,RDR-MUM-5385,Pradeep Das,+91 8661572729,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Petrol Scooter,Inactive,1.7,26,3.7,227,13,20,65
+386,RDR-MUM-5386,Abdul Babu,+91 8886983862,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Electric Bike,On Leave,0.6,40,4.1,117,14,32,44
+387,RDR-MUM-5387,Balaji Patel,+91 8864851260,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Electric Bike,On Leave,2.7,31,4,380,8,10,80
+388,RDR-MUM-5388,Naresh Babu,+91 9279187532,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Electric Scooter,Active,1,33,4.5,322,46,46,100
+389,RDR-MUM-5389,Anil Gupta,+91 9646346564,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Bicycle,Inactive,0.6,16,4.2,153,30,30,100
+390,RDR-MUM-5390,Dinesh Rao,+91 7292157835,DS-MUM-1760,Zepto  -  Borivali III,Mumbai,Electric Bike,Inactive,3,44,4.6,157,16,35,46
+391,RDR-MUM-5391,Devraj Chauhan,+91 7445532283,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Electric Scooter,Inactive,1.9,41,3.6,422,20,45,44
+392,RDR-MUM-5392,Harish Singh,+91 9822977979,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Electric Bike,Active,4.1,16,4.9,459,32,32,100
+393,RDR-MUM-5393,Manoj Murthy,+91 8403124688,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Petrol Scooter,Active,0.9,29,3.5,273,6,10,60
+394,RDR-MUM-5394,Ganesh Yadav,+91 9942358213,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Electric Scooter,On Leave,2.6,33,5,379,49,49,100
+395,RDR-MUM-5395,Abdul Subramanian,+91 7886476517,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Electric Bike,On Leave,1.6,15,4.9,213,24,24,100
+396,RDR-MUM-5396,Ravi Gupta,+91 9471969615,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Petrol Scooter,On Leave,0.5,25,3.5,387,30,30,100
+397,RDR-MUM-5397,Shankar Joshi,+91 9880841206,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Electric Scooter,Active,4.9,28,4.2,441,18,18,100
+398,RDR-MUM-5398,Suresh Reddy,+91 9400460098,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Electric Scooter,Inactive,4.5,31,4.1,250,18,18,100
+399,RDR-MUM-5399,Harish Shah,+91 9191163279,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Petrol Scooter,Active,3.4,27,3.6,226,14,19,74
+400,RDR-MUM-5400,Prakash Sharma,+91 8811293744,DS-MUM-1456,Blinkit  -  Kurla Ultra,Mumbai,Electric Bike,Active,1.7,25,4.9,254,23,35,66
+401,RDR-DEL-5401,Santosh Iyer,+91 9450309958,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Electric Scooter,Active,0.8,21,3.7,485,50,50,100
+402,RDR-DEL-5402,Abdul Mukherjee,+91 7266870811,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Electric Scooter,Active,1.9,18,4.3,372,44,44,100
+403,RDR-DEL-5403,Abdul Verma,+91 8431042889,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Petrol Scooter,Inactive,0.9,40,4.5,203,26,34,76
+404,RDR-DEL-5404,Imran Iyer,+91 9143303806,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Electric Scooter,Inactive,1.2,37,3.9,492,29,35,83
+405,RDR-DEL-5405,Pranav Joshi,+91 9152560325,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Petrol Scooter,Active,5,15,4.9,398,20,20,100
+406,RDR-DEL-5406,Arun Sen,+91 9690687810,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Electric Scooter,Active,4.1,19,3.7,345,47,47,100
+407,RDR-DEL-5407,Suresh Chandran,+91 7240354421,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Electric Scooter,Active,3.6,45,4.5,275,9,11,82
+408,RDR-DEL-5408,Ashok Mukherjee,+91 8972680546,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Electric Scooter,Inactive,1.4,35,4.2,138,12,16,75
+409,RDR-DEL-5409,Sanjay Patel,+91 8231563076,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Bicycle,Active,1.3,33,4.1,269,21,27,78
+410,RDR-DEL-5410,Farhan Joshi,+91 8131656371,DS-DEL-1095,Zepto  -  Naraina Zone,Delhi,Electric Scooter,Active,2.1,44,3.8,346,28,36,78
+411,RDR-DEL-5411,Vikram Shah,+91 7137204552,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Petrol Scooter,On Leave,3.4,30,4.1,125,19,43,44
+412,RDR-DEL-5412,Srikanth Das,+91 7194190297,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Electric Scooter,Active,1.4,43,4.7,454,21,36,58
+413,RDR-DEL-5413,Amit Pillai,+91 9953459662,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Bicycle,Active,3.7,30,4.3,405,11,26,42
+414,RDR-DEL-5414,Naresh Mehta,+91 9639440654,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Electric Scooter,Active,0.6,34,3.8,112,33,33,100
+415,RDR-DEL-5415,Abdul Mishra,+91 7968285490,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Electric Bike,Active,4,22,5,415,17,34,50
+416,RDR-DEL-5416,Vijay Gupta,+91 9358935844,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Electric Scooter,Inactive,4.6,16,4.6,490,16,16,100
+417,RDR-DEL-5417,Naveen Mukherjee,+91 8480968571,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Electric Bike,Inactive,1.3,22,4.4,412,10,15,67
+418,RDR-DEL-5418,Javed Iyer,+91 8735185398,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Bicycle,On Leave,4.8,33,3.7,135,33,33,100
+419,RDR-DEL-5419,Ganesh Chandran,+91 8682101860,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Electric Scooter,Active,0.9,22,4.4,272,25,42,60
+420,RDR-DEL-5420,Ravi Roy,+91 8100733897,DS-DEL-1015,Zepto  -  Dwarka Plus,Delhi,Electric Scooter,On Leave,4.1,25,4.6,119,38,38,100
+421,RDR-DEL-5421,Varun Sharma,+91 7258604568,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Petrol Scooter,Inactive,4,42,4.3,420,16,31,52
+422,RDR-DEL-5422,Harish Patel,+91 8856491925,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Electric Bike,Active,1,24,4,363,20,35,57
+423,RDR-DEL-5423,Pradeep Krishnan,+91 8950234433,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Petrol Scooter,Active,1.9,37,5,499,18,37,49
+424,RDR-DEL-5424,Nandhu Murthy,+91 9945026004,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Electric Scooter,On Leave,4.2,27,4,241,24,30,80
+425,RDR-DEL-5425,Nandhu Yadav,+91 7290812817,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Petrol Scooter,Inactive,4.8,27,4.8,470,11,16,69
+426,RDR-DEL-5426,Abdul Mukherjee,+91 7295508799,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Petrol Scooter,Inactive,4.9,22,4.5,242,26,26,100
+427,RDR-DEL-5427,Vijay Rao,+91 8251014666,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Electric Scooter,Active,2.1,25,3.8,191,22,29,76
+428,RDR-DEL-5428,Deepak Chandran,+91 9819433407,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Petrol Scooter,Inactive,2.5,23,3.8,453,29,50,58
+429,RDR-DEL-5429,Nandhu Patel,+91 8375584366,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Petrol Scooter,On Leave,0.7,29,4.6,421,29,29,100
+430,RDR-DEL-5430,Pradeep Murthy,+91 8629442753,DS-DEL-1030,Zepto  -  Dwarka I,Delhi,Electric Bike,Active,2.2,41,4.2,387,28,31,90
+431,RDR-DEL-5431,Prakash Pillai,+91 9342217614,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,Active,4.3,24,3.5,314,23,37,62
+432,RDR-DEL-5432,Rohit Singh,+91 7467013765,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,Active,3.8,32,4.9,441,49,49,100
+433,RDR-DEL-5433,Deepak Pandey,+91 9758896006,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Bike,On Leave,2.4,35,3.7,150,9,16,56
+434,RDR-DEL-5434,Vinod Nair,+91 7208724746,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,Inactive,2.3,32,4.6,252,8,10,80
+435,RDR-DEL-5435,Farhan Sen,+91 8809311588,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,Active,0.7,33,4.3,285,41,41,100
+436,RDR-DEL-5436,Naresh Reddy,+91 7487437109,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Bicycle,Active,4.2,35,4.4,162,22,22,100
+437,RDR-DEL-5437,Ganesh Singh,+91 7322214072,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,Active,0.9,42,3.7,289,39,39,100
+438,RDR-DEL-5438,Santosh Das,+91 8809786356,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,On Leave,2.2,26,4.8,224,23,32,72
+439,RDR-DEL-5439,Harish Nair,+91 8147907058,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,Active,1.5,23,4.3,249,28,28,100
+440,RDR-DEL-5440,Ramesh Subramanian,+91 9816688804,DS-DEL-1158,Zepto  -  Connaught Place Base,Delhi,Electric Scooter,On Leave,4.1,28,5,413,41,41,100
+441,RDR-DEL-5441,Ashok Gupta,+91 9165480798,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Electric Bike,Inactive,2.4,32,4.5,157,39,39,100
+442,RDR-DEL-5442,Pavan Mukherjee,+91 7611382735,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Electric Scooter,Active,4.3,16,4.3,441,38,38,100
+443,RDR-DEL-5443,Balaji Rajan,+91 9827497537,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Electric Bike,Active,4.8,29,3.8,404,28,38,74
+444,RDR-DEL-5444,Pradeep Verma,+91 7235491190,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Bicycle,Active,3.6,21,5,279,39,39,100
+445,RDR-DEL-5445,Girish Reddy,+91 9376903372,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Electric Scooter,On Leave,4.1,17,4.1,269,25,25,100
+446,RDR-DEL-5446,Santosh Sen,+91 8396568375,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Petrol Scooter,Inactive,0.6,37,4.4,425,25,49,51
+447,RDR-DEL-5447,Balaji Rajan,+91 8220816186,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Petrol Scooter,Active,3.1,39,4.9,370,14,28,50
+448,RDR-DEL-5448,Vijay Rao,+91 7704177085,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Petrol Scooter,On Leave,4.4,43,4,153,22,27,81
+449,RDR-DEL-5449,Lokesh Mishra,+91 8803072911,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Petrol Scooter,On Leave,0.7,23,4.1,200,10,10,100
+450,RDR-DEL-5450,Rakesh Bose,+91 9844813102,DS-DEL-1128,Zepto  -  Noida Sector 18 Hub,Delhi,Petrol Scooter,Active,4.5,37,3.9,363,23,23,100
+451,RDR-DEL-5451,Javed Das,+91 8499905152,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Bicycle,Inactive,1.9,23,4.8,152,11,11,100
+452,RDR-DEL-5452,Nandhu Menon,+91 7344767409,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Electric Scooter,Inactive,2.5,41,4,159,37,37,100
+453,RDR-DEL-5453,Farhan Chauhan,+91 9793159203,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Electric Scooter,Active,4.6,28,4.6,207,32,39,82
+454,RDR-DEL-5454,Salman Roy,+91 8981560713,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Electric Scooter,On Leave,0.8,37,4.3,104,47,47,100
+455,RDR-DEL-5455,Sanjay Subramanian,+91 9710607239,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Bicycle,Active,4.2,41,3.6,202,5,13,38
+456,RDR-DEL-5456,Karthik Shah,+91 7486949792,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Petrol Scooter,Active,4.2,31,4.1,295,5,10,50
+457,RDR-DEL-5457,Anil Menon,+91 7359779054,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Electric Scooter,Active,1.3,42,4.2,361,9,17,53
+458,RDR-DEL-5458,Srikanth Mehta,+91 8275571407,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Electric Bike,Active,4.2,17,3.9,464,38,38,100
+459,RDR-DEL-5459,Dinesh Sharma,+91 7714457408,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Petrol Scooter,Active,1.5,22,4.5,471,43,48,90
+460,RDR-DEL-5460,Vikram Pillai,+91 8651131533,DS-DEL-1115,Zepto  -  Janakpuri Nano,Delhi,Bicycle,On Leave,4,15,4.2,449,12,12,100
+461,RDR-DEL-5461,Sanjay Pillai,+91 7745471251,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Electric Bike,Active,3.2,45,4,146,41,41,100
+462,RDR-DEL-5462,Imran Pillai,+91 8555059083,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Electric Bike,Inactive,2.6,21,4.2,454,15,19,79
+463,RDR-DEL-5463,Satish Roy,+91 9526439295,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Petrol Scooter,Active,5,45,4.8,410,19,19,100
+464,RDR-DEL-5464,Harish Sen,+91 9737558411,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Petrol Scooter,Active,1,17,4,407,17,28,61
+465,RDR-DEL-5465,Vikram Pillai,+91 8397302928,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Electric Scooter,On Leave,4.5,24,3.8,243,19,43,44
+466,RDR-DEL-5466,Balaji Subramanian,+91 7160961339,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Electric Bike,Inactive,3.2,36,4,368,42,42,100
+467,RDR-DEL-5467,Sanjay Krishnan,+91 7803731001,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Petrol Scooter,Active,4.6,27,4.1,469,14,32,44
+468,RDR-DEL-5468,Karthik Mukherjee,+91 9714225883,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Electric Bike,Active,3.7,36,4.3,223,19,37,51
+469,RDR-DEL-5469,Pavan Rao,+91 9484933362,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Petrol Scooter,Inactive,4.3,43,4.3,205,41,41,100
+470,RDR-DEL-5470,Sachin Singh,+91 8237378973,DS-DEL-1069,Blinkit  -  Karol Bagh Nano,Delhi,Petrol Scooter,On Leave,3,44,3.8,257,14,16,88
+471,RDR-DEL-5471,Satish Murthy,+91 8802693852,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Electric Scooter,Active,3.8,24,4.1,246,33,38,87
+472,RDR-DEL-5472,Ajay Mehta,+91 8728751749,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Electric Scooter,Inactive,2.6,42,4.5,244,12,17,71
+473,RDR-DEL-5473,Ashok Bose,+91 7607042021,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Electric Bike,Active,4.4,27,4.3,219,4,10,40
+474,RDR-DEL-5474,Lokesh Sharma,+91 7247494816,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Electric Bike,Active,4.9,43,4.9,418,12,12,100
+475,RDR-DEL-5475,Sunil Reddy,+91 8868443155,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Electric Scooter,Active,2,20,4,374,27,33,82
+476,RDR-DEL-5476,Suresh Kumar,+91 8393698307,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Electric Scooter,On Leave,3.1,20,4.2,191,17,32,53
+477,RDR-DEL-5477,Salman Subramanian,+91 7238948590,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Petrol Scooter,On Leave,2.3,45,4.2,157,17,17,100
+478,RDR-DEL-5478,Arjun Sharma,+91 9314119421,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Petrol Scooter,Inactive,4.5,39,4.7,445,46,46,100
+479,RDR-DEL-5479,Ganesh Kumar,+91 9104427929,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Petrol Scooter,Active,3.6,26,4,328,7,12,58
+480,RDR-DEL-5480,Vijay Joshi,+91 9732080338,DS-DEL-1170,Blinkit  -  Cyber City V,Delhi,Electric Scooter,Active,0.7,45,3.9,216,23,42,55
+481,RDR-DEL-5481,Farhan Roy,+91 9662767039,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Electric Scooter,Inactive,5,25,5,417,27,37,73
+482,RDR-DEL-5482,Naresh Mehta,+91 7277042316,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Electric Bike,Inactive,2.3,22,3.8,378,17,17,100
+483,RDR-DEL-5483,Sanjay Verma,+91 9123529192,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Petrol Scooter,Active,2.1,35,4.7,226,38,43,88
+484,RDR-DEL-5484,Dinesh Murthy,+91 9374651533,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Petrol Scooter,On Leave,3.2,16,4.5,492,29,44,66
+485,RDR-DEL-5485,Devraj Chandran,+91 7151791998,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Petrol Scooter,Active,2.2,32,3.9,495,41,41,100
+486,RDR-DEL-5486,Nandhu Reddy,+91 7846456758,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Petrol Scooter,Active,2.4,18,4.5,228,24,33,73
+487,RDR-DEL-5487,Vikram Bose,+91 9852399189,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Electric Scooter,Inactive,1,38,4.4,157,13,23,57
+488,RDR-DEL-5488,Sachin Singh,+91 7634443249,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Electric Scooter,Active,1.7,31,5,221,29,41,71
+489,RDR-DEL-5489,Pranav Iyer,+91 8417130941,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Electric Scooter,Active,4.6,37,4.9,100,22,25,88
+490,RDR-DEL-5490,Ajay Gupta,+91 7113689561,DS-DEL-1174,Blinkit  -  Shalimar Bagh I,Delhi,Petrol Scooter,Inactive,4.3,36,4.2,338,6,13,46
+491,RDR-DEL-5491,Deepak Subramanian,+91 9180582403,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Petrol Scooter,Active,1.7,22,4.2,389,21,46,46
+492,RDR-DEL-5492,Sachin Mishra,+91 8153773200,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Electric Scooter,Active,0.7,24,4,195,30,30,100
+493,RDR-DEL-5493,Satish Pandey,+91 8893001503,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Electric Scooter,Inactive,4.5,15,4.8,225,10,23,43
+494,RDR-DEL-5494,Shankar Pillai,+91 7452896879,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Electric Scooter,Active,3.3,43,4.6,217,25,40,62
+495,RDR-DEL-5495,Harish Chandran,+91 8296354549,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Electric Scooter,Active,2.6,41,4.1,147,23,27,85
+496,RDR-DEL-5496,Pavan Rajan,+91 8796693603,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Electric Bike,Active,1.1,38,3.6,188,12,16,75
+497,RDR-DEL-5497,Pradeep Singh,+91 8734313309,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Petrol Scooter,Active,2.5,34,4.1,336,19,19,100
+498,RDR-DEL-5498,Pranav Bose,+91 7834937767,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Electric Bike,On Leave,4.5,30,4.9,472,16,16,100
+499,RDR-DEL-5499,Anil Murthy,+91 8573185010,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Bicycle,Active,1.9,37,4.8,484,42,42,100
+500,RDR-DEL-5500,Balaji Subramanian,+91 9719172154,DS-DEL-1045,Blinkit  -  Pitampura Nano,Delhi,Petrol Scooter,Active,4.8,42,4,371,32,32,100

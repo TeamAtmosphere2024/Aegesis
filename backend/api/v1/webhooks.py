@@ -153,6 +153,12 @@ def get_trigger_event(event_id: int, db: Session = Depends(get_db)):
     return _event_resp(event)
 
 
+@router.post("/reset", summary="Reset all Dark Stores to GREEN (demo cleanup)")
+def reset_simulation(db: Session = Depends(get_db)):
+    crud.reset_all_dark_stores(db)
+    return {"status": "success", "message": "All hubs reset to GREEN."}
+
+
 # ── Helper ──────────────────────────────────────────────────────────────────
 
 def _event_resp(e):

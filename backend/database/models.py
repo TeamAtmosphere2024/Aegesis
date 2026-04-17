@@ -9,6 +9,15 @@ from sqlalchemy import (
 )
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
+try:
+    from geoalchemy2 import Geometry
+    HAS_POSTGIS = True
+except ImportError:
+    HAS_POSTGIS = False
+
+# TOGGLE THIS TO TRUE ONLY AFTER INSTALLING POSTGIS IN POSTGRES CONSOLE
+USE_GEOSPATIAL = True 
+
 from datetime import datetime
 
 Base = declarative_base()
@@ -19,9 +28,13 @@ class DarkStore(Base):
     __tablename__ = "dark_stores"
 
     id              = Column(Integer, primary_key=True, index=True)
-    name            = Column(String(100), unique=True, nullable=False)
+    external_id     = Column(String(50), nullable=True, index=True)  # Darkstore ID from CSV
+    name            = Column(String(200), unique=True, nullable=False)
+    city            = Column(String(100), nullable=True, index=True)  # City from CSV
     lat             = Column(Float, nullable=False)
     lon             = Column(Float, nullable=False)
+    if USE_GEOSPATIAL:
+        geom        = Column(Geometry('POINT', srid=4326))
     radius_km       = Column(Float, default=5.0)
     current_zone    = Column(String(10), default="GREEN")   # Changes to ORANGE/RED during triggers
     is_active       = Column(Boolean, default=True)
@@ -32,14 +45,29 @@ class Rider(Base):
     __tablename__ = "riders"
 
     id              = Column(Integer, primary_key=True, index=True)
+    external_id     = Column(String(50), nullable=True, index=True)  # Rider ID from CSV
     name            = Column(String(100), nullable=False)
     phone           = Column(String(15), unique=True, nullable=False)
+    city            = Column(String(100), nullable=True, index=True)
     hub_name        = Column(String(100), nullable=False, default="Default Hub")
+    darkstore_external_id = Column(String(50), nullable=True, index=True)
+    vehicle_type    = Column(String(50), nullable=True)
+    rider_status    = Column(String(20), nullable=True) # Online/Offline
+    experience_years = Column(Float, default=0.0)
+    avg_deliveries_per_day = Column(Float, default=0.0)
+    rating          = Column(Float, default=5.0)
+    earnings_per_hour = Column(Float, default=0.0)
+    
     zone_category   = Column(String(10), nullable=False, default="GREEN")   # GREEN / ORANGE / RED
     zone_risk       = Column(Float, default=0.3)                             # 0.0 – 1.0
     lat             = Column(Float, nullable=True)
     lon             = Column(Float, nullable=True)
+    if USE_GEOSPATIAL:
+        geom        = Column(Geometry('POINT', srid=4326))
     dpdt            = Column(Float, default=100.0)                           # 0.0 – 100.0  %
+    deliveries_accepted_triggers = Column(Integer, default=0)
+    total_deliveries_trigger = Column(Integer, default=0)
+    
     account_age_hours = Column(Float, default=0.0)
     ip_count        = Column(Integer, default=1)                             # unique IPs per session
     is_active       = Column(Boolean, default=True)
@@ -141,6 +169,8 @@ class TriggerEvent(Base):
     category        = Column(String(20), nullable=False)   # ENVIRONMENTAL / PLATFORM / SOCIOPOLITICAL
     center_lat      = Column(Float, nullable=False)
     center_lon      = Column(Float, nullable=False)
+    if USE_GEOSPATIAL:
+        geom        = Column(Geometry('POINT', srid=4326))
     radius_km       = Column(Float, default=2.5)
     severity_multiplier = Column(Float, default=1.0)
     estimated_duration_hours = Column(Float, default=1.0)

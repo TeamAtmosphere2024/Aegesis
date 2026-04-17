@@ -1,0 +1,51 @@
+SR. No,Darkstore ID,Darkstore Name,City,Latitude,Longitude
+1,DS-CHE-2801,Blinkit - Vadapalani Zone,Chennai,13.060149,80.211903
+2,DS-CHE-2190,Zepto - Puzhal Mini,Chennai,13.148581,80.205214
+3,DS-CHE-2817,Blinkit - Nungambakkam I,Chennai,13.059008,80.243834
+4,DS-CHE-1251,Blinkit - KK Nagar IV,Chennai,13.029807,80.203715
+5,DS-CHE-3505,Blinkit - Siruseri I,Chennai,12.850092,80.216868
+6,DS-CHE-2117,Blinkit - Palavakkam Plus,Chennai,12.943844,80.251354
+7,DS-CHE-2411,Blinkit - Kovilambakkam V,Chennai,12.924856,80.195174
+8,DS-CHE-3113,Blinkit - Korattur Ultra,Chennai,13.108344,80.189099
+9,DS-CHE-1408,Zepto - Perungalathur Quick,Chennai,12.913535,80.098348
+10,DS-CHE-3579,Blinkit - Thiruvanmiyur Point,Chennai,12.982079,80.253949
+11,DS-CHE-3254,Blinkit - Perumbakkam Nano,Chennai,12.910089,80.206352
+12,DS-CHE-1052,Blinkit - Royapuram III,Chennai,13.118394,80.29822
+13,DS-CHE-1644,Zepto - Gerugambakkam Zone,Chennai,12.989483,80.101236
+14,DS-CHE-2763,Blinkit - Nanganallur I,Chennai,12.99591,80.20634
+15,DS-CHE-3776,Zepto - Chromepet Max,Chennai,12.950737,80.147693
+16,DS-BLR-1521,Blinkit - CV Raman Nagar Mini,Bangalore,12.987004,77.650588
+17,DS-BLR-1737,Blinkit - Vijayanagar Nano,Bangalore,12.971223,77.546252
+18,DS-BLR-1740,Zepto - Whitefield Plus,Bangalore,12.968673,77.751378
+19,DS-BLR-1660,Blinkit - Marathahalli III,Bangalore,12.962277,77.696712
+20,DS-BLR-1411,Blinkit - Richmond Town Hub,Bangalore,12.95636,77.607086
+21,DS-BLR-1678,Blinkit - Electronic City Nano,Bangalore,12.847331,77.659045
+22,DS-BLR-1626,Blinkit - Kengeri Plus,Bangalore,12.913784,77.497034
+23,DS-BLR-1513,Blinkit - Yelahanka Express,Bangalore,13.102252,77.590664
+24,DS-BLR-1859,Zepto - Whitefield Prime,Bangalore,12.968302,77.743721
+25,DS-BLR-1136,Blinkit - Peenya IV,Bangalore,13.02884,77.52269
+26,DS-BLR-1811,Zepto - Begur Zone,Bangalore,12.882584,77.616741
+27,DS-BLR-1076,Zepto - Begur Base,Bangalore,12.882735,77.616046
+28,DS-BLR-1636,Blinkit - RT Nagar Plus,Bangalore,13.026425,77.592271
+29,DS-BLR-1973,Zepto - Anekal Flash,Bangalore,12.83,77.699928
+30,DS-BLR-1938,Blinkit - Peenya Hub,Bangalore,13.026338,77.529735
+31,DS-MUM-1696,Zepto - Mulund Flash,Mumbai,19.172194,72.950177
+32,DS-MUM-1667,Zepto - Belapur Nano,Mumbai,19.014085,73.022833
+33,DS-MUM-1063,Blinkit - Belapur Flash,Mumbai,19.018213,73.034273
+34,DS-MUM-1533,Zepto - Chembur Nano,Mumbai,19.060467,72.898776
+35,DS-MUM-1066,Blinkit - Worli Point,Mumbai,19.013428,72.832159
+36,DS-MUM-1621,Blinkit - Andheri East Hub,Mumbai,19.119265,72.866484
+37,DS-MUM-1346,Blinkit - Navi Mumbai IV,Mumbai,19.031184,73.018618
+38,DS-MUM-1490,Blinkit - Ghatkopar Hub,Mumbai,19.079703,72.90972
+39,DS-MUM-1760,Zepto - Borivali III,Mumbai,19.230334,72.846708
+40,DS-MUM-1456,Blinkit - Kurla Ultra,Mumbai,19.069243,72.883046
+41,DS-DEL-1095,Zepto - Naraina Zone,Delhi,28.617945,77.157426
+42,DS-DEL-1015,Zepto - Dwarka Plus,Delhi,28.59957,77.054347
+43,DS-DEL-1030,Zepto - Dwarka I,Delhi,28.587691,77.053044
+44,DS-DEL-1158,Zepto - Connaught Place Base,Delhi,28.635369,77.220905
+45,DS-DEL-1128,Zepto - Noida Sector 18 Hub,Delhi,28.568213,77.32754
+46,DS-DEL-1115,Zepto - Janakpuri Nano,Delhi,28.619447,77.079516
+47,DS-DEL-1069,Blinkit - Karol Bagh Nano,Delhi,28.645572,77.191574
+48,DS-DEL-1170,Blinkit - Cyber City V,Delhi,28.499923,77.091753
+49,DS-DEL-1174,Blinkit - Shalimar Bagh I,Delhi,28.708475,77.151796
+50,DS-DEL-1045,Blinkit - Pitampura Nano,Delhi,28.698341,77.139112

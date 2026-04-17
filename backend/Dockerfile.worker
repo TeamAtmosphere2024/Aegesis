@@ -1,0 +1,13 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+# Background workers don't need to expose ports, 
+# but we keep the structure consistent.
+CMD ["python", "worker.py"]

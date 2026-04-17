@@ -14,7 +14,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from database.session import init_db
-from api.v1 import rider, webhooks, premium, policies
+from api.v1 import rider, webhooks, premium, policies, analytics, admin
 
 # ──────────────────────────────────────────────────────
 # Logging
@@ -46,12 +46,17 @@ app = FastAPI(
 # ──────────────────────────────────────────────────────
 # CORS (allows React Native frontend dev server)
 # ──────────────────────────────────────────────────────
+import os
+CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins  = ["*"],   # tighten in production
+    allow_origins  = CORS_ORIGINS,
+    allow_credentials = True,
     allow_methods  = ["*"],
     allow_headers  = ["*"],
 )
+
 
 # ──────────────────────────────────────────────────────
 # Startup event — initialise DB tables
@@ -68,6 +73,8 @@ app.include_router(rider.router)
 app.include_router(premium.router)
 app.include_router(policies.router)
 app.include_router(webhooks.router)
+app.include_router(analytics.router)
+app.include_router(admin.router)
 
 # ──────────────────────────────────────────────────────
 # Health-check
@@ -85,3 +92,4 @@ def root():
 @app.get("/health", tags=["Health"])
 def health():
     return {"status": "ok"}
+# reload trigger

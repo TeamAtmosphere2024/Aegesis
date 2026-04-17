@@ -21,7 +21,7 @@ FRAUD_MODEL_PATH    = MODELS_ROOT / "fraud_model"      / "fraud_model.pkl"
 # ──────────────────────────────────────────────────────
 # Geospatial constants
 # ──────────────────────────────────────────────────────
-TRIGGER_RADIUS_KM        = 2.5   # Haversine eligibility radius
+TRIGGER_RADIUS_KM        = 50.0  # Expanded for demo: covers full city radius
 MAX_GPS_JUMP_KM          = 1.0   # Max allowed GPS displacement between pings
 APP_SUSPENSION_RADIUS_KM = 999.0 # Pincode-wide — effectively unlimited radius
 

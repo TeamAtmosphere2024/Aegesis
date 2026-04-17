@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 
 from database.session import get_db
 from database import crud
+from database.models import Rider
 from core.dpdt_tracker import recalculate_dpdt_for_rider
 
 router = APIRouter(prefix="/api/v1/riders", tags=["Riders"])
@@ -119,6 +120,26 @@ def get_closest_hub(lat: float, lon: float, db: Session = Depends(get_db)):
     }
 
 
+@router.get("/login/{phone}", summary="Search for a rider by phone number for login")
+def login_lookup(phone: str, db: Session = Depends(get_db)):
+    # Standardize phone number for lookup (strip non-digits)
+    clean_phone = "".join(filter(str.isdigit, phone))
+    last_10 = clean_phone[-10:] if len(clean_phone) >= 10 else clean_phone
+    
+    print(f"DEBUG: Login lookup for phone='{phone}' (Clean: '{clean_phone}', Last10: '{last_10}')")
+    
+    # Use a case-insensitive, fuzzy match for maximum reliability
+    # This matches any phone number that contains the last 10 digits entered
+    rider = db.query(Rider).filter(Rider.phone.like(f"%{last_10}")).first()
+    
+    if not rider:
+        print(f"DEBUG: No rider found for {last_10}")
+        return {"found": False}
+        
+    print(f"DEBUG: Found rider {rider.name} (ID: {rider.id})")
+    return {"found": True, "rider": _rider_resp(rider)}
+
+
 @router.get("/", summary="List all active riders")
 def list_riders(db: Session = Depends(get_db)):
     riders = crud.get_all_riders(db)
@@ -208,21 +229,25 @@ def get_rider_claims(rider_id: int, db: Session = Depends(get_db)):
 # ── Private helpers ─────────────────────────────────────────────────────────
 
 def _rider_resp(r):
-    return {
-        "id":             r.id,
-        "name":           r.name,
-        "phone":          r.phone,
-        "hub_name":       r.hub_name,
-        "zone_category":  r.zone_category,
-        "zone_risk":      r.zone_risk,
-        "dpdt":           r.dpdt,
-        "lat":            r.lat,
-        "lon":            r.lon,
-        "account_age_h":  r.account_age_hours,
-        "is_active":      r.is_active,
-        "is_flagged":     r.is_flagged,
-        "created_at":     r.created_at.isoformat() if r.created_at else None,
-    }
+    try:
+        return {
+            "id":             int(r.id),
+            "name":           str(r.name),
+            "phone":          str(r.phone),
+            "hub_name":       str(r.hub_name),
+            "zone_category":  str(r.zone_category),
+            "zone_risk":      float(r.zone_risk),
+            "dpdt":           float(r.dpdt),
+            "lat":            float(r.lat) if r.lat is not None else None,
+            "lon":            float(r.lon) if r.lon is not None else None,
+            "account_age_h":  float(r.account_age_hours),
+            "is_active":      bool(r.is_active),
+            "is_flagged":     bool(r.is_flagged),
+            "created_at":     r.created_at.isoformat() if r.created_at else None,
+        }
+    except Exception as e:
+        # Fallback to avoid 500 errors during login lookups
+        return {"id": r.id, "name": r.name, "phone": r.phone, "error": str(e)}
 
 
 def _claim_resp(c):

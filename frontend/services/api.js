@@ -5,9 +5,10 @@
  * environment-driven base URL and robust error handling.
  */
 
-const RAW_BASE = process.env.EXPO_PUBLIC_API_URL || 'https://aegesis-backend-latest.onrender.com';
+// Use the environment variable for production, fallback to localhost for development
+const RAW_BASE = process.env.EXPO_PUBLIC_API_URL || 'http://127.0.0.1:8000';
 const BASE_URL = RAW_BASE.endsWith('/api/v1') ? RAW_BASE : `${RAW_BASE}/api/v1`;
-const TIMEOUT_MS = 10000;
+const TIMEOUT_MS = 15000; // Increased timeout for production cold starts
 
 /**
  * Generic request helper with timeout and error handling.
@@ -104,9 +105,12 @@ export const uploadImage = async (imageUri) => {
 
 export const loginByPhone = async (phone) => {
   try {
-    const riders = await request('/riders/');
-    const rider = riders.find(r => r.phone === phone);
-    if (rider) return { status: 'found', rider_id: rider.id, ...rider };
+    const cleanPhone = phone.replace(/\D/g, '');
+    const resp = await request(`/riders/login/${cleanPhone}`);
+    
+    if (resp && resp.found && resp.rider) {
+        return { status: 'found', rider_id: resp.rider.id, ...resp.rider };
+    }
     return { status: 'not_found' };
   } catch (e) {
     return { status: 'not_found' };
@@ -131,16 +135,36 @@ export const triggerWebhook = (type, payload) => request(`/webhooks/${type}`, {
   body: JSON.stringify(payload),
 });
 
+export const resetSimulation = () => request('/webhooks/reset', {
+  method: 'POST',
+});
+
 export const fetchSettlement = async (triggerType, riderId) => {
   const claims = await request(`/riders/${riderId}/claims`);
   return claims.length > 0 ? claims[0] : null;
 };
+
+export const fetchClaimHistory = (riderId) => request(`/riders/${riderId}/claims`);
 
 export const fetchFraudReport = () => request('/fraud/report').catch(err => {
     // Fallback logic if fraud report is unavailable in backend yet
     console.warn("Fraud report endpoint failed, using local architecture data.");
     return null; 
 });
+
+export const fetchSummary = () => request('/admin/summary');
+export const fetchRiders = () => request('/admin/riders');
+export const fetchDarkStores = () => request('/admin/dark-stores');
+export const fetchDarkStoreCities = () => request('/admin/dark-stores/cities');
+export const updateRiderZone = (dsId, zone) => request(`/admin/dark-stores/${dsId}/zone`, {
+    method: 'PUT',
+    body: JSON.stringify({ new_zone: zone })
+});
+
+// GuideWire Analytics
+export const fetchPredictiveAnalytics = () => request('/admin/analytics/predictive');
+
+export const deleteRider = (id) => request(`/admin/riders/${id}`, { method: 'DELETE' });
 
 export default {
   BASE_URL,
@@ -154,6 +178,14 @@ export default {
   fetchPremium,
   fetchTriggers,
   triggerWebhook,
+  resetSimulation,
   fetchSettlement,
   fetchFraudReport,
+  fetchSummary,
+  fetchRiders,
+  fetchDarkStores,
+  fetchDarkStoreCities,
+  deleteRider,
+  updateRiderZone,
+  fetchPredictiveAnalytics,
 };

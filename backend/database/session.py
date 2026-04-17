@@ -11,6 +11,10 @@ from database.models import Base
 # Default to Postgres for production, fallback to environment variable
 DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:12345@localhost:5432/aegesis")
 
+# Handle Render/Neon's 'postgres://' legacy URIs for SQLAlchemy compatibility
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+
 # If using Postgres, we don't need 'check_same_thread', but we keep it for SQLite fallback just in case
 if DATABASE_URL.startswith("sqlite"):
     engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False}, echo=False)

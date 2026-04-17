@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Animated } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Animated, useWindowDimensions, Platform } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { FontAwesome5 } from '@expo/vector-icons';
 import GlassCard from '../components/GlassCard';
@@ -7,9 +7,8 @@ import CustomModal from '../components/CustomModal';
 import ZoneBadge from '../components/ZoneBadge';
 import DPDTMeter from '../components/DPDTMeter';
 import CoverageBar from '../components/CoverageBar';
-import SimulationConsole from '../components/SimulationConsole';
 import colors from '../theme/colors';
-import { triggerWebhook, fetchRiderProfile } from '../services/api';
+import api, { fetchRiderProfile } from '../services/api';
 
 const ZONE_DATA = {
   green:  { penalty: 0,  coverage: 50 },
@@ -19,7 +18,9 @@ const ZONE_DATA = {
 
 export default function ShieldDashboard({ setScreen, riderContext, setRiderContext }) {
   const [modalVisible, setModalVisible] = useState(false);
-  const [consoleVisible, setConsoleVisible] = useState(false);
+  const [payoutVisible, setPayoutVisible] = useState(false);
+  const [payoutOrder, setPayoutOrder] = useState(null);
+  const lastZone = useRef(null);
   const pulseAnim = useRef(new Animated.Value(0)).current;
 
   const zone = riderContext?.zone || 'orange';
@@ -34,6 +35,12 @@ export default function ShieldDashboard({ setScreen, riderContext, setRiderConte
   const finalPremium = subtotal + dpdtPenalty;
 
   useEffect(() => {
+    // Load Razorpay Script
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    document.body.appendChild(script);
+    
     Animated.loop(
       Animated.sequence([
         Animated.timing(pulseAnim, { toValue: 1, duration: 1500, useNativeDriver: false }),
@@ -45,80 +52,89 @@ export default function ShieldDashboard({ setScreen, riderContext, setRiderConte
   // ON MOUNT: Refresh the rider's live data from the database (Hub, Zone, etc.)
   useEffect(() => {
     refreshRiderData();
+    // Poll every 10 seconds so zone changes from admin triggers are reflected instantly
+    const interval = setInterval(refreshRiderData, 10000);
+    return () => clearInterval(interval);
   }, []);
 
   const refreshRiderData = async () => {
     if (!riderContext?.rider_id) return;
-    const freshProfile = await fetchRiderProfile(riderContext.rider_id);
-    if (freshProfile && freshProfile.id) {
-       setRiderContext({
-          ...riderContext,
-          hub: freshProfile.hub_name,
-          zone: freshProfile.zone_category?.toLowerCase() || 'green',
-          dpdt: freshProfile.dpdt
-       });
+    try {
+        const freshProfile = await fetchRiderProfile(riderContext.rider_id);
+        if (freshProfile && freshProfile.id) {
+           const newZone = freshProfile.zone_category?.toLowerCase() || 'green';
+           
+           // TRIGGER DETECTION: If zone changed to ORANGE or RED, open Razorpay Payout
+           const isHighRisk = newZone === 'red' || newZone === 'orange';
+           const wasHighRisk = lastZone.current === 'red' || lastZone.current === 'orange';
+
+           if (isHighRisk && !wasHighRisk) {
+               handleAutoPayout(freshProfile);
+           }
+           lastZone.current = newZone;
+
+           setRiderContext({
+              ...riderContext,
+              hub: freshProfile.hub_name,
+              zone: newZone,
+              dpdt: freshProfile.dpdt
+           });
+        }
+    } catch (err) {
+        console.warn("Refresh failed", err);
     }
   };
 
-  const handleTrigger = async (id) => {
-    setConsoleVisible(false);
+  const handleAutoPayout = async (profile) => {
+    try {
+        // Request order from backend for this specific rider
+        const API_BASE = api.BASE_URL;
+        const resp = await fetch(`${API_BASE}/admin/generate-payout-order`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                hub_name: profile.hub_name, 
+                trigger_type: 'flood', 
+                rider_id: profile.id,
+                duration: 3.5, // Simulation: 3.5 hours disruption
+                severity: 1.2  // Simulation: Moderate severity
+            }) 
+        });
+        
+        if (!resp.ok) return;
+        const orderData = await resp.json();
 
-    // Fetch the rider's active physical database location!
-    const activeRiderId = riderContext?.rider_id || 1;
-    const riderMeta = await fetchRiderProfile(activeRiderId);
+        const options = {
+            key: orderData.key,
+            amount: orderData.amount_per_rider * 100, // Dynamic rider payout
+            currency: "INR",
+            name: "AEGESIS INSURANCE",
+            description: `Instant ${profile.hub_name} Disruption Payout`,
+            order_id: orderData.order_id,
+            handler: function (response) {
+                // In a real app, we'd update claim status here
+                console.log("Rider received payment", response.razorpay_payment_id);
+            },
+            prefill: {
+                name: profile.name,
+                contact: profile.phone
+            },
+            theme: { color: colors.vibrant }
+        };
 
-    // Build the expected JSON payload based on Phase 2 Specification
-    let payload = {
-      source: "simulation_console",
-      trigger_type: id.toUpperCase(),
-      category: "ENVIRONMENTAL",
-      geo_fence: {
-        center_lat: riderMeta?.lat || 12.9352, 
-        center_long: riderMeta?.lon || 77.6245,
-        radius_km: 40.0
-      },
-      severity_multiplier: 1.0,
-      estimated_duration_hours: 3.0,
-      zone_category: zone.toUpperCase()
-    };
-
-    if (id === 'imd-weather') {
-      payload.source = "imd_weather_api";
-      payload.trigger_type = "SEVERE_FLOOD";
-      payload.severity_multiplier = 2.0;
-      payload.zone_category = "RED"; // Targeted shift
-    } else if (id === 'imd-heat') {
-      payload.source = "imd_heat_api";
-      payload.trigger_type = "EXTREME_HEAT";
-      payload.severity_multiplier = 1.2;
-      payload.zone_category = "ORANGE"; // Targeted shift
-    } else if (id === 'news-disruption') {
-      payload.source = "news_nlp_api";
-      payload.trigger_type = "STRIKE";
-      payload.category = "SOCIOPOLITICAL";
-      payload.severity_multiplier = 1.8;
-      payload.zone_category = "RED"; // Targeted shift
-    } else if (id === 'platform-status') {
-      payload.source = "zepto_oracle";
-      payload.trigger_type = "APP_SUSPENSION";
-      payload.category = "APP_SUSPENSION_ORACLE";
-      payload.severity_multiplier = 1.4;
-      payload.zone_category = "ORANGE"; // Targeted shift
-      payload.estimated_duration_hours = 2.0;
-      payload.affected_pincode = "560034";
+        const rzp = new window.Razorpay(options);
+        rzp.open();
+    } catch (e) {
+        console.error("Auto Payout Error", e);
     }
-
-    // Call the actual backend via api.js
-    await triggerWebhook(id, payload);
-
-    // Add small delay for realistic "Processing Oracle Signal" feel before jumping to history
-    setTimeout(() => {
-      setScreen(`Settlement:${id}`);
-    }, 400);
   };
 
-  return (
-    <LinearGradient colors={[colors.gradientTop, colors.gradientMid, colors.gradientBottom]} style={styles.container}>
+
+  const { width } = useWindowDimensions();
+  const isDesktop = width > 1024 && Platform.OS === 'web';
+
+  const DashboardContent = (
+    <View style={[styles.container, isDesktop && styles.webContainer]}>
       
       {/* Header */}
       <View style={styles.header}>
@@ -164,66 +180,42 @@ export default function ShieldDashboard({ setScreen, riderContext, setRiderConte
           </GlassCard>
         </View>
 
-        {/* Simulation Section */}
-        <Text style={styles.sectionTitle}>System Intelligence</Text>
-
-        <TouchableOpacity onPress={() => setConsoleVisible(true)} activeOpacity={0.8}>
-          <GlassCard style={styles.simulationLauncher}>
-            <View style={styles.launcherContent}>
-              <View style={styles.pulseContainer}>
-                <Animated.View style={[styles.pulseCircle, {
-                  opacity: pulseAnim.interpolate({ inputRange: [0, 1], outputRange: [0.6, 0] }),
-                  transform: [{ scale: pulseAnim.interpolate({ inputRange: [0, 1], outputRange: [1, 2.5] }) }]
-                }]} />
-                <View style={styles.launcherIconBox}>
-                  <FontAwesome5 name="satellite" size={18} color={colors.white} />
-                </View>
-              </View>
-              <View style={styles.launcherInfo}>
-                <Text style={styles.launcherTitle}>Simulation Centre</Text>
-                <Text style={styles.launcherDesc}>Test real-world disaster triggers & payouts</Text>
-              </View>
-              <View style={styles.launcherBadge}>
-                <Text style={styles.launcherBadgeText}>SYSTEM</Text>
-              </View>
-            </View>
-          </GlassCard>
-        </TouchableOpacity>
-
-        {/* Security / History Row */}
+        {/* History Row */}
         <View style={styles.secHistoryRow}>
-          <TouchableOpacity style={{ flex: 1 }} onPress={() => setScreen('TriggerStatus')} activeOpacity={0.7}>
+          <TouchableOpacity style={{ flex: 1 }} onPress={() => setScreen('SettlementHistory')} activeOpacity={0.7}>
             <GlassCard style={styles.miniSecCard}>
               <FontAwesome5 name="history" size={16} color={colors.accent} style={{ marginBottom: 6 }} />
-              <Text style={styles.miniSecTitle}>History</Text>
-            </GlassCard>
-          </TouchableOpacity>
-          <TouchableOpacity style={{ flex: 1 }} onPress={() => setScreen('FraudAlert')} activeOpacity={0.7}>
-            <GlassCard style={styles.miniSecCard}>
-              <FontAwesome5 name="shield-alt" size={16} color={colors.danger} style={{ marginBottom: 6 }} />
-              <Text style={styles.miniSecTitle}>Security</Text>
+              <Text style={styles.miniSecTitle}>Settlement History</Text>
             </GlassCard>
           </TouchableOpacity>
         </View>
 
       </ScrollView>
 
-      {/* Simulation Console Modal */}
-      <SimulationConsole 
-        visible={consoleVisible} 
-        onClose={() => setConsoleVisible(false)}
-        onTrigger={handleTrigger}
-      />
-
       <CustomModal visible={modalVisible} title="Anomaly Detected" 
         description="Claim frozen by Isolation Forest. 499 concurrent claims from same IP range." 
         onClose={() => setModalVisible(false)} />
+    </View>
+  );
+
+  if (isDesktop) {
+    return DashboardContent;
+  }
+
+  return (
+    <LinearGradient colors={[colors.gradientTop, colors.gradientMid, colors.gradientBottom]} style={{ flex: 1 }}>
+      {DashboardContent}
     </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, paddingHorizontal: 20, paddingTop: 55 },
+  webContainer: {
+    paddingTop: 0,
+    paddingHorizontal: 0,
+    backgroundColor: 'transparent',
+  },
   header: {
     flexDirection: 'row', alignItems: 'center', marginBottom: 16,
   },
@@ -231,57 +223,58 @@ const styles = StyleSheet.create({
   location: { fontSize: 12, color: colors.primary, opacity: 0.5, marginTop: 2, fontWeight: '500' },
 
   // Premium card
-  premiumCard: { marginBottom: 12, padding: 18 },
+  premiumCard: { marginBottom: 16, padding: 24, borderRadius: 24 },
   premiumHeader: {
-    flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6,
+    flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10,
   },
   premiumLabel: {
-    fontSize: 11, color: colors.primary, opacity: 0.45,
-    textTransform: 'uppercase', letterSpacing: 1.2, fontWeight: 'bold',
+    fontSize: 12, color: colors.primary, opacity: 0.45,
+    textTransform: 'uppercase', letterSpacing: 1.5, fontWeight: 'bold',
   },
   protectedBadge: {
     flexDirection: 'row', alignItems: 'center',
     backgroundColor: colors.safety + '15',
-    paddingHorizontal: 10, paddingVertical: 4, borderRadius: 12,
+    paddingHorizontal: 12, paddingVertical: 6, borderRadius: 12,
     borderWidth: 1, borderColor: colors.safety + '40',
   },
   protectedDot: {
-    width: 6, height: 6, borderRadius: 3, backgroundColor: colors.safety, marginRight: 5,
+    width: 6, height: 6, borderRadius: 3, backgroundColor: colors.safety, marginRight: 6,
   },
-  protectedText: { color: colors.safety, fontSize: 10, fontWeight: 'bold', letterSpacing: 0.8 },
-  premiumAmount: { fontSize: 36, fontWeight: '900', color: colors.primary, letterSpacing: -1, marginBottom: 2 },
-  premiumBreakdown: { fontSize: 12, color: colors.primary, opacity: 0.4, marginBottom: 2 },
-  premiumEngine: { fontSize: 11, color: colors.vibrant, fontWeight: '600', marginBottom: 12 },
+  protectedText: { color: colors.safety, fontSize: 10, fontWeight: 'bold', letterSpacing: 1 },
+  premiumAmount: { fontSize: 48, fontWeight: '900', color: colors.primary, letterSpacing: -2, marginBottom: 4 },
+  premiumBreakdown: { fontSize: 13, color: colors.primary, opacity: 0.4, marginBottom: 4 },
+  premiumEngine: { fontSize: 11, color: colors.vibrant, fontWeight: '700', marginBottom: 16, textTransform: 'uppercase', letterSpacing: 1 },
   breakdownBtn: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
-    backgroundColor: colors.vibrant + '0A', paddingVertical: 10, borderRadius: 12,
-    borderWidth: 1, borderColor: colors.vibrant + '20', gap: 8,
+    backgroundColor: colors.vibrant + '10', paddingVertical: 14, borderRadius: 16,
+    borderWidth: 1, borderColor: colors.vibrant + '30', gap: 10,
   },
-  breakdownText: { color: colors.vibrant, fontSize: 13, fontWeight: '700' },
+  breakdownText: { color: colors.vibrant, fontSize: 14, fontWeight: '800' },
 
   // Metrics row
-  metricsRow: { flexDirection: 'row', gap: 10, marginBottom: 16 },
-  dpdtCard: { flex: 1, padding: 14, alignItems: 'center' },
-  coverageSmallCard: { flex: 1, padding: 14, justifyContent: 'center' },
+  metricsRow: { flexDirection: 'row', gap: 16, marginBottom: 20 },
+  dpdtCard: { flex: 1, padding: 20, alignItems: 'center', borderRadius: 24 },
+  coverageSmallCard: { flex: 1, padding: 20, justifyContent: 'center', borderRadius: 24 },
 
   // Simulation Launcher
-  sectionTitle: { fontSize: 16, fontWeight: 'bold', color: colors.primary, marginBottom: 10 },
-  simulationLauncher: { padding: 16, borderLeftWidth: 4, borderLeftColor: colors.vibrant },
+  sectionTitle: { fontSize: 18, fontWeight: '800', color: colors.primary, marginBottom: 14, letterSpacing: -0.5 },
+  simulationLauncher: { padding: 20, borderLeftWidth: 6, borderLeftColor: colors.vibrant, borderRadius: 24 },
   launcherContent: { flexDirection: 'row', alignItems: 'center' },
-  pulseContainer: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
-  pulseCircle: { position: 'absolute', width: 30, height: 30, borderRadius: 15, backgroundColor: colors.vibrant },
+  pulseContainer: { width: 50, height: 50, alignItems: 'center', justifyContent: 'center' },
+  pulseCircle: { position: 'absolute', width: 36, height: 36, borderRadius: 18, backgroundColor: colors.vibrant },
   launcherIconBox: {
-    width: 36, height: 36, borderRadius: 12, backgroundColor: colors.vibrant,
-    alignItems: 'center', justifyContent: 'center', elevation: 4,
+    width: 44, height: 44, borderRadius: 14, backgroundColor: colors.vibrant,
+    alignItems: 'center', justifyContent: 'center', elevation: 6,
+    shadowColor: colors.vibrant, shadowRadius: 10, shadowOpacity: 0.4,
   },
-  launcherInfo: { flex: 1, marginLeft: 14 },
-  launcherTitle: { fontSize: 15, fontWeight: 'bold', color: colors.primary },
-  launcherDesc: { fontSize: 11, color: colors.primary, opacity: 0.45, marginTop: 1 },
-  launcherBadge: { backgroundColor: colors.primary + '08', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 8 },
-  launcherBadgeText: { fontSize: 8, color: colors.vibrant, fontWeight: '900', letterSpacing: 0.5 },
+  launcherInfo: { flex: 1, marginLeft: 18 },
+  launcherTitle: { fontSize: 17, fontWeight: 'bold', color: colors.primary },
+  launcherDesc: { fontSize: 12, color: colors.primary, opacity: 0.5, marginTop: 2 },
+  launcherBadge: { backgroundColor: colors.primary + '10', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 },
+  launcherBadgeText: { fontSize: 9, color: colors.vibrant, fontWeight: '900', letterSpacing: 1 },
 
   // Security/History row
-  secHistoryRow: { flexDirection: 'row', gap: 10, marginTop: 10 },
-  miniSecCard: { padding: 16, alignItems: 'center', justifyContent: 'center' },
-  miniSecTitle: { fontSize: 12, fontWeight: 'bold', color: colors.primary, opacity: 0.7 },
+  secHistoryRow: { flexDirection: 'row', gap: 16, marginTop: 16 },
+  miniSecCard: { padding: 20, alignItems: 'center', justifyContent: 'center', borderRadius: 24 },
+  miniSecTitle: { fontSize: 14, fontWeight: 'bold', color: colors.primary, opacity: 0.8 },
 });

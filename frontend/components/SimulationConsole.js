@@ -43,7 +43,7 @@ const REAL_WORLD_TRIGGERS = [
   },
 ];
 
-export default function SimulationConsole({ visible, onClose, onTrigger }) {
+export default function SimulationConsole({ visible, onClose, onTrigger, onReset }) {
   return (
     <Modal visible={visible} transparent animationType="slide">
       <View style={styles.overlay}>
@@ -61,6 +61,11 @@ export default function SimulationConsole({ visible, onClose, onTrigger }) {
               <FontAwesome5 name="times" size={16} color="rgba(255,255,255,0.6)" />
             </TouchableOpacity>
           </View>
+
+          <TouchableOpacity style={styles.resetSimulationBtn} onPress={onReset}>
+            <FontAwesome5 name="undo-alt" size={14} color={colors.vibrant} />
+            <Text style={styles.resetSimulationText}>Reset Simulation (Return all to GREEN)</Text>
+          </TouchableOpacity>
 
           <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
             <View style={styles.warningBox}>
@@ -246,5 +251,23 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: 'bold',
     letterSpacing: 1,
-  }
+  },
+  resetSimulationBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 12,
+    backgroundColor: 'rgba(0,119,182,0.1)',
+    padding: 16,
+    borderRadius: 16,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: 'rgba(0,119,182,0.2)',
+    marginHorizontal: 4,
+  },
+  resetSimulationText: {
+    color: colors.vibrant,
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
 });

@@ -29,6 +29,7 @@ export default function OnboardingScreen({ setScreen, setRiderContext, prefillPh
   const [error, setError] = useState('');
   const [assignedHub, setAssignedHub] = useState(null);
   const [detectPhase, setDetectPhase] = useState('gps');
+  const [loading, setLoading] = useState(false);
 
   // Animations
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -123,45 +124,53 @@ export default function OnboardingScreen({ setScreen, setRiderContext, prefillPh
   };
 
   const handleActivate = async () => {
-    if (!assignedHub) return;
+    if (!assignedHub || loading) return;
+    setLoading(true);
+    setError('');
 
-    // Build the payload mapping exactly to the backend's RiderCreate Pydantic schema
-    const payload = {
-      name: name.trim(),
-      phone: phone,
-      zone_risk: 0.55,      // Generic Base Risk for new accounts
-      lat: assignedHub.coords.lat,
-      lon: assignedHub.coords.lng,
-      dpdt: 100.0,          // Perfect DPDT score for brand new accounts
-    };
+    try {
+      // Build the payload mapping exactly to the backend's RiderCreate Pydantic schema
+      const payload = {
+        name: name.trim(),
+        phone: phone,
+        zone_risk: 0.55,      // Generic Base Risk for new accounts
+        lat: assignedHub.coords.lat,
+        lon: assignedHub.coords.lng,
+        dpdt: 100.0,          // Perfect DPDT score for brand new accounts
+      };
 
-    // 1. Send to Backend Database
-    const newRider = await api.registerRider(payload);
+      // 1. Send to Backend Database
+      const newRider = await api.registerRider(payload);
 
-    if (newRider && !newRider.error) {
-      // 2. Set UI Context to use actual Database Data + the auto-assigned hub logic from Model 0
-      setRiderContext({
-        rider_id: newRider.id || assignedHub.rider_id,
-        name: newRider.name,
-        hub: newRider.hub_name || assignedHub.hub_name,
-        zone: newRider.zone_category ? newRider.zone_category.toLowerCase() : assignedHub.zone,
-        platform: assignedHub.platform,
-        dpdt: newRider.dpdt_pct !== undefined ? newRider.dpdt_pct : 100, 
-        hourly_wage: 120, // Default estimated wage for frontend rendering
-      });
-      setScreen('Dashboard');
-    } else {
-      let errorMessage = "Failed to register. Please try again.";
-      if (newRider && newRider.error) {
-        // If it says "Phone number already registered", make it user-facing
-        if (newRider.error.includes("Phone number already")) {
-           errorMessage = "This phone number is already registered! Please login instead.";
-        } else {
-           errorMessage = newRider.error;
-        }
+      if (newRider && !newRider.error) {
+        // 2. Set UI Context to use actual Database Data + the auto-assigned hub logic from Model 0
+        setRiderContext({
+          rider_id: newRider.id || assignedHub.rider_id,
+          name: newRider.name,
+          hub: newRider.hub_name || assignedHub.hub_name,
+          zone: newRider.zone_category ? newRider.zone_category.toLowerCase() : assignedHub.zone,
+          platform: assignedHub.platform,
+          dpdt: newRider.dpdt_pct !== undefined ? newRider.dpdt_pct : 100, 
+          hourly_wage: 120, // Default estimated wage for frontend rendering
+        });
+        setScreen('Dashboard');
+      } else {
+        throw new Error("Invalid response from server");
       }
+    } catch (err) {
+      console.error("Activation failed:", err);
+      let errorMessage = err.message || "Failed to register. Please try again.";
+      
+      if (errorMessage.includes("Phone number already")) {
+        errorMessage = "This phone number is already registered! Please login instead.";
+      } else if (errorMessage.includes("timed out") || errorMessage.includes("waking up")) {
+        errorMessage = "Server is warming up. Please try again in a few seconds.";
+      }
+      
       setError(errorMessage);
       setStep(1); // go back to the first step so the user can fix the input and see the error
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -172,8 +181,11 @@ export default function OnboardingScreen({ setScreen, setRiderContext, prefillPh
     done: { icon: 'check-circle', text: 'Hub detected!', color: colors.safety },
   };
 
+  const Wrapper = Platform.OS === 'web' ? View : TouchableWithoutFeedback;
+  const wrapperProps = Platform.OS === 'web' ? { style: { flex: 1 } } : { onPress: Keyboard.dismiss };
+
   return (
-    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+    <Wrapper {...wrapperProps}>
       <LinearGradient colors={[colors.gradientTop, colors.gradientMid, colors.gradientBottom]} style={styles.container}>
         <KeyboardAvoidingView style={styles.inner} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
 
@@ -415,16 +427,22 @@ export default function OnboardingScreen({ setScreen, setRiderContext, prefillPh
                 </Text>
               </View>
 
-              <AnimatedButton onPress={handleActivate} gradientColors={[colors.safety, '#1fa0a0']}>
-                <FontAwesome5 name="rocket" size={16} color={colors.white} style={{ marginRight: 10 }} />
-                <Text style={styles.buttonText}>Activate Shield</Text>
+              <AnimatedButton onPress={handleActivate} gradientColors={[colors.safety, '#1fa0a0']} disabled={loading}>
+                {loading ? (
+                  <Text style={styles.buttonText}>Activating...</Text>
+                ) : (
+                  <>
+                    <FontAwesome5 name="rocket" size={16} color={colors.white} style={{ marginRight: 10 }} />
+                    <Text style={styles.buttonText}>Activate Shield</Text>
+                  </>
+                )}
               </AnimatedButton>
             </Animated.View>
           )}
 
         </KeyboardAvoidingView>
       </LinearGradient>
-    </TouchableWithoutFeedback>
+    </Wrapper>
   );
 }
 

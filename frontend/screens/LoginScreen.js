@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import {
   View, Text, StyleSheet, TextInput, Animated,
   KeyboardAvoidingView, Platform, Keyboard, TouchableWithoutFeedback,
-  TouchableOpacity,
+  TouchableOpacity, useWindowDimensions, ActivityIndicator
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -92,7 +92,7 @@ export default function LoginScreen({ setScreen, setRiderContext }) {
 
     // Call live Postgres Backend via API
     const response = await api.loginByPhone(phone);
-    
+
     if (response && response.status === 'found') {
       setFoundRider({
          rider_id: response.rider_id || response.id,
@@ -137,10 +137,11 @@ export default function LoginScreen({ setScreen, setRiderContext }) {
     red:    { emoji: '🔴', label: 'Red Zone', color: colors.zoneRed },
   };
 
-  return (
-    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <LinearGradient colors={[colors.gradientTop, colors.gradientMid, colors.gradientBottom]} style={styles.container}>
-        <KeyboardAvoidingView style={styles.inner} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+  const { width } = useWindowDimensions();
+  const isDesktop = width > 1024 && Platform.OS === 'web';
+
+  const LoginContent = (
+    <KeyboardAvoidingView style={[styles.inner, isDesktop && styles.webInner]} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
 
           {/* Logo */}
           <Animated.View style={[styles.logoContainer, {
@@ -331,14 +332,28 @@ export default function LoginScreen({ setScreen, setRiderContext }) {
           )}
 
         </KeyboardAvoidingView>
+  );
+
+  if (isDesktop) {
+    return LoginContent;
+  }
+
+  const Wrapper = Platform.OS === 'web' ? View : TouchableWithoutFeedback;
+  const wrapperProps = Platform.OS === 'web' ? { style: { flex: 1 } } : { onPress: Keyboard.dismiss };
+
+  return (
+    <Wrapper {...wrapperProps}>
+      <LinearGradient colors={[colors.gradientTop, colors.gradientMid, colors.gradientBottom]} style={styles.container}>
+        {LoginContent}
       </LinearGradient>
-    </TouchableWithoutFeedback>
+    </Wrapper>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
   inner: { flex: 1, padding: 24, justifyContent: 'center' },
+  webInner: { padding: 0 },
 
   // Logo
   logoContainer: { alignItems: 'center', marginBottom: 36 },
@@ -424,7 +439,7 @@ const styles = StyleSheet.create({
   verifyingContainer: { alignItems: 'center' },
   loaderCircle: {
     width: 90, height: 90, borderRadius: 45,
-    backgroundColor: 'rgba(255, 255, 255, 0.55)',
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
     alignItems: 'center', justifyContent: 'center',
     borderWidth: 2, borderColor: 'rgba(0, 119, 182, 0.15)',
     shadowColor: colors.vibrant, shadowOpacity: 0.2, shadowRadius: 15,

@@ -91,7 +91,7 @@ def process_trigger(db: Session, trigger_event_id: int) -> dict:
                 db, rider.id, event.id,
                 status="not_eligible",
                 distance_km=payout_result["distance_km"],
-                reason="Outside 2.5 km radius",
+                reason="Outside radius",
             )
             results.append({
                 "rider_id":   rider.id,
@@ -100,6 +100,14 @@ def process_trigger(db: Session, trigger_event_id: int) -> dict:
                 "distance_km": payout_result["distance_km"],
             })
             continue
+
+        # ── Rider IS in range — update their zone immediately ─────────────
+        new_zone = event.zone_category or "RED"
+        try:
+            crud.update_rider_zone(db, rider.id, new_zone)
+            logger.info(f"Rider {rider.name} zone -> {new_zone}")
+        except Exception as ze:
+            logger.warning(f"Could not update rider zone: {ze}")
 
         # ── Model 3: fraud gate ────────────────────────────────────────────
         fraud_score, allowed = fraud_check(
